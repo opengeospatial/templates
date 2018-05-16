@@ -9,6 +9,8 @@
 :numbered:
 :sectanchors:
 :source-highlighter: pygments
+:bibtex-file: bibtex-file.bib
+:bibtex-style: lncs.csl
 
 = {title}
 

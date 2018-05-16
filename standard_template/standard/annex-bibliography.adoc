@@ -3,23 +3,17 @@
 [[Bibliography]]
 = Bibliography
 
-[NOTE]
-.Example Bibliography (Delete this note).
-===============================================
-The TC has approved Springer LNCS as the official document citation type.
+bibliography::[]
 
-Springer LNCS is widely used in technical and computer science journals and other publications
+// *****************************************************************************
+// The bibliography is automatically built. All you need to do is to provide your citation information in the file bibtex-file.bib
 
-* For citations in the text please use square brackets and consecutive numbers: [1], [2], [3]
+// You can add citation keys anywhere in the text, following the following syntax: cite:[NameYear], e.g. cite:[VanZyl2009]
 
-– Actual References:
+// More information is provided here: https://github.com/asciidoctor/asciidoctor-bibtex
 
-[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)
+//The TC has approved Springer LNCS as the official document citation type.
 
-[n] Web: Author Surname, A.: Title, http://Website-Url
+//Springer LNCS is widely used in technical and computer science journals and other publications
 
-===============================================
-
-((( Example )))
-[[OGC2015]]
-[1] OGC: OGC Testbed 12 Annex B: Architecture. (2015).
+// *****************************************************************************

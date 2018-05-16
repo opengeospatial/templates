@@ -14,8 +14,6 @@ This folder contains the text for the standard
 
 ## Building
 
-To produce the HTML of the standard run `asciidoctor --safe -a data-uri -o
-standard_document.html standard_document.adoc`.
+To produce the HTML of the standard run `asciidoctor -r asciidoctor-bibtex --safe -a data-uri -o standard_document.html standard_document.adoc`.
 
-To produce the PDF of the standard run `asciidoctor-pdf --safe -o
-standard_document.pdf standard_document.adoc`
+To produce the PDF of the standard run `asciidoctor-pdf -r asciidoctor-bibtex --safe -o standard_document.pdf standard_document.adoc`
