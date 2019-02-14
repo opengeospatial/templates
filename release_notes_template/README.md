@@ -8,3 +8,5 @@ The repo is organized as follows:
 * release_notes - the main document content
   - organized in multiple sections
   - this is the only part needed to create a release notes document
+
+Special thanks to Jeff Yutzler for developing this example for this template.
