@@ -1,6 +1,6 @@
 # Best Practice template
 
-This GitHub repository contains the content for an OGC standard.
+This GitHub repository contains the content for an OGC Best Practice.
 
 The repo is organized as follows:
 
