@@ -18,5 +18,5 @@ This folder contains the text for the Discussion Paper
 To produce the HTML of the Discussion Paper run `asciidoctor --safe -a data-uri -o
 <Discussion Paper name>.html dp.adoc`
 
-To produce the PDF of the Best Practice run `asciidoctor-pdf --safe -o
+To produce the PDF of the Discussion Paper run `asciidoctor-pdf --safe -o
 <Discussion Paper name>.pdf dp.adoc`
