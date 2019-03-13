@@ -10,8 +10,6 @@
 :sectanchors:
 :source-highlighter: pygments
 
-= {title}
-
 <<<
 [cols = ">",frame = "none",grid = "none"]
 |===
