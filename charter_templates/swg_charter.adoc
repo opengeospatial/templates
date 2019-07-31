@@ -144,6 +144,18 @@ This section describes what the deliverables will be for this SWG activity. Deli
 This section also includes a preliminary schedule of activities. For example, an RFC focused SWG schedule would provide a plan and schedule that includes the start date, target date for release of the candidate standard for public review, date for consolidation of comments, date for edits to document based on comments, and a final target date for making a recommendation to the Membership. This information will be made public and will also be used as input to a RoadMap for the document. Therefore, the more detail the better.
 ////
 
+=== Initial Deliverables
+
+////
+Describe the initial standard(s) to be developed by the SWG.
+////
+
+=== Additional SWG Tasks
+
+////
+Describe each additional standard to be developed by the SWG as an additional task after the deliverables from the initial charter have been completed. This section is blank in a new charter, then is populated with each task approval request per the OGC TC Policies and Procedures.
+////
+
 == IPR Policy for this SWG
 
 [x] RAND-Royalty Free
