@@ -3,5 +3,4 @@ This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which 
 
 For the purposes of this document, the following additional terms and definitions apply.
 
-=== *term name*
-text of the definition
+*term name*:: text of the definition
