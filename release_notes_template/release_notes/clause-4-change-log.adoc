@@ -4,8 +4,13 @@
 === KEY
 
 * Source:
-** Change Request
+** Change Request (CR)
 ** GitHub Issue
+** Editor - The CDB document Editor
+** OGC-NA - OGC Naming Authority review
+** Public - Public Comment period
+** SWG decision
+** User - The CDB User Community
 ** Other
 
 * Identifier: Change Request number or issue number and pull request/commit in GitHub
