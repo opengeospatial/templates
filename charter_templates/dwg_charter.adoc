@@ -1,0 +1,189 @@
+:Title: OGC (add title text)
+:titletext: {Title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc:
+:toc-placement!:
+:toclevels: 4
+:numbered:
+:sectanchors:
+:source-highlighter: pygments
+
+<<<
+[cols = ">",frame = "none",grid = "none"]
+|===
+|{set:cellbgcolor:#FFFFFF}
+|[big]*Open Geospatial Consortium*
+|Submission Date: <yyyy-mm-dd>
+|Approval Date:   <yyyy-mm-dd>
+|Internal reference number of this OGC(R) document:    YY-nnnrx
+|Category: OGC(R) Domain Working Group Charter
+|Authors:   <Name(s) of Editor or Editors>
+|===
+
+[cols = "^", frame = "none"]
+|===
+|[big]*{titletext}*
+|===
+
+[cols = "^", frame = "none", grid = "none"]
+|===
+|*Copyright notice*
+|Copyright (C) <year> Open Geospatial Consortium
+|To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+|===
+
+<<<
+
+== Introduction
+
+This Domain Working Group (DWG) charter defines the role for OGC activities within the <NAME of DOMAIN information community> domain and to provide an open forum for the discussion and presentation of interoperability requirements, use cases, pilots, and implementations of OGC Standards in this domain. This Charter is to be presented to the OGC’s Technical and Planning Committees for consideration.
+
+Domains are distinct Information Communities that defines a user domain where:
+
+* A distinct market, application, or business approach exists;
+
+* Common data definition, structure, syntax, and definitions exists;
+
+* Common user requirements exist; and/or
+
+* Common approach to vendors exists
+
+=== Working Group
+
+Operation of OGC Domain Working Group follows the policies and procedures of the Technical Committee.  The following definition from the Technical Policies and Procedures apply to this DWG Charter template.
+
+*Domain Working Group*: A group (organizationally, a subgroup of the TC) of individuals composed of members of the TC and invited guests, with the specific intent of solving some particular interoperability problem or problems in a particular technology domain for recommendation to the Technical Committee.
+
+Functions of a Domain Working Group are as follows.
+
+* Provide a forum for discussion and documentation of interoperability requirements for a given information or user community.
+
+* Provide a forum to discuss and recommend document actions related to Interoperability Program Reports.
+
+* Develop Change Requests Proposals (CRPs) for existing OGC Standards.
+
+* Develop engineering reports with the intent seeking approval by the TC for release of these documents as OGC White Papers, Discussion Papers or Best Practices Papers.
+
+* Informational presentations and discussions about the market use of adopted OGC Standards.
+
+* Have a formal approved charter that defines the DWGs Scope of Work and estimated timeline for completion of the work.
+
+* Have all-member voting policies (unless otherwise stated).
+
+* Have missions and goals defined by the TC.
+
+A DWG [underline]#Does Not# work on Standards submissions, candidate Standards, or revisions to existing OGC Standards. However, a DWG can develop change requests as document interoperability requirements that can then be submitted as work items to a Standards Working Group (SWG).
+
+A DWG may determine that they wish to have public collaboration, such as in teleconference, email discussions, or a public twiki. In this case, the DWG shall make a motion to the TC to approve public participation in the DWG. Voting in DWGs is by simple majority of OGC Members present at the WG meeting, not just Voting TC Members, with the caveat that no OGC Member organization may cast more than one vote in a WG vote.
+
+== Purpose of Working Group
+
+////
+Proposers will describe the purpose of the Domain Working Group and its overall mission in relation to OGC processes and activities.
+////
+
+== Problem Statement
+
+////
+The problem(s) associated with interoperability and geodata processing as they relate to the DWG needs to be defined.  The WG DOMAIN information community needs to be defined, (users, data, service, and technology providers).  Problems might be framed as barriers that need to be overcome.  It is these barriers that will ultimately suggest the nature of the OGC’s role and level of involvement and lead to a set of processes, activities, and organizational approaches whereby the DOMAIN community can, through OGC, come together to develop a common means for digitally representing and sharing domain related geospatial data, and for processing interoperability within mainstream information system environments.
+////
+
+== Charter
+
+////
+General Scope of Domain Working Group.
+////
+
+=== Charter Members
+
+The initial membership of the <DOMAIN WG> will consist of the following members and individuals with extensive education and experience in <DOMAIN> issues, namely:
+
+<NAME and AFFILIATION>
+
+=== Key Activities
+
+////
+The DWG will need to define key activities it intends on undertaking.  Examples of such activity might be framed around the following considerations.
+
+1.	Determine OGC goals and organizational issues that impact DOMAIN data, technology and markets.
+
+2.	Define the business issues and approaches for OGC to incorporate so that DOMAIN considerations are brought into proper focus with OGC Standards initiatives.  The approach includes defining business objectives, tasks and schedule.
+
+3.	Define approach for engaging with the DOMAIN community to enlist their support.
+////
+
+=== Business Case
+
+////
+Define the business case related to interoperability that confront the DOMAIN community. Examples of issues that might be discussed include:
+
+* GeoData and support data taxonomy and characterization
+
+* Data sharing, interface standards and approaches
+
+* Metadata standards
+
+* DOMAIN analysis models and processing standards
+
+* Data quality and accuracy
+
+* Data protection and truth in labeling
+
+* Data acquisition coordination
+
+* User education
+
+Define the business case that requires resolution because businesses that are engaged in DOMAIN related activities view them as an obstacle for growth.
+
+Define what measures OGC should consider for developing guidelines that address business case issues and that lead to or suggest that process-related standards and other intervention strategies available via consortia approaches will best support the infrastructure of the information community to come together and to inform information community consumers.
+////
+
+== Organizational Approach and Scope of Work
+
+=== <DOMAIN WG> Business Goals
+
+////
+The <DOMAIN WG> will need to establish a set of business goals that frame the basis for determining the nature and type of recommendations made to OGC, framed around the above mentioned business issues.  Examples of the types of discussion for framing goals include
+
+1.	Efforts should focus on working <DOMAIN> issues and problems that result in a net gain for the community.
+
+2.	Minimize technical distinctions between <DOMAIN> data processing systems that use geography, as this can lead to artificial barriers that limit the potential of all segments of the information community to come together and fully prosper.
+
+3.	Avoid placing artificial technical barriers on use of <DOMAIN> data.
+
+4.	Establish the means by which OGC can achieve interoperability and yet preserve the proprietary nature of data.
+
+5.	Define the supporting infrastructure for the community to achieve these goals.
+////
+
+=== <DOMAIN WG>: Mission and Role
+
+////
+The DOMAIN WG will concern itself with technology and technology policy issues, focusing on geodata information and technology interests as related to that DOMAIN and the means by which those issues are appropriately factored into the OGC standards development process.
+
+1.	Define the mission of the DOMAIN Working Group with focus on DOMAIN-based interoperability standards for data and related processing services, under the auspices of OGC.
+
+2.	Define the role of the DOMAIN WG to present, refine and focus interoperability-related issues to the Technical Committee.
+////
+
+=== Activities planned for <DOMAIN WG>
+
+////
+Define scope of work and tasks in terms of interoperability approaches for OGC Technical Committee consideration, define how this is to complement existing efforts and results produced by the OpenGIS Project, resulting in a specification for all forms of geospatial data and geoprocessing services. The following points should be discussed under scope of work and tasks.
+
+1.	Define how the DWG will act as an impetus for the creation of whole new modes of operation and economic behavior which will influence the way businesses and governments operate in DOMAIN business activity. These could include business rules, standards and interfaces that must be common across a multidisciplinary and fragmented geographic information community, as well as conformance processes pertaining to DOMAIN data and technology.
+
+2.	Define DWG membership objectives.
+
+3.	Define how user communities, both current and potential, should have access to the working group so that requirements and technology issues are addressed and results do indeed provide the technology they need.
+
+4.	Define technical tasks to be undertaken by the DWG.
+////
+
+== References
+
+////
+Optional list of references.
+////
