@@ -6,7 +6,7 @@
 
 ===	Document contributor contact points
 
-All questions regarding this document should be directed to the contacts provided below or the referenced standard editor(s).
+All questions regarding this document should be directed to the contacts provided below or the referenced Standard editor(s).
 
 .Contacts
 [width="80%",options="header"]

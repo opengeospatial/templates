@@ -41,7 +41,7 @@
 |*Warning*
 |===
 
-This document is not an OGC standard. This document provides release notes for an OGC standard. This document is subject to change without notice and may not be referred to as an OGC Standard.
+This document is not an OGC Standard. This document provides release notes for an OGC Standard. This document is subject to change without notice and may not be referred to as an OGC Standard.
 
 Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
 
