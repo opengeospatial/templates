@@ -3,6 +3,7 @@
 // repeat the following for each comment
 
 Comment <number in sequence>
+Section number: <or General>
 Criticality: <Editorial, Minor, Major, other>
 Disposition: <Corrected, Addressed in current version, Deferred to future version, Not agreed, other>
 
