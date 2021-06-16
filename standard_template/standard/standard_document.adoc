@@ -34,7 +34,7 @@
 |===
 |*Copyright notice*
 |Copyright (C) <year> Open Geospatial Consortium
-|To obtain additional rights of use, visit http://www.opengeospatial.org/legal/
+|To obtain additional rights of use, visit http://www.ogc.org/legal/
 |===
 
 [cols = "^", frame = "none"]
