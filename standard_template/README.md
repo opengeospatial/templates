@@ -2,11 +2,11 @@
 
 OGC uses [Metanorma](https://www.metanorma.org) software for creating Standards documents.
 
-**Pre-requisite**
+## Pre-requisite
 
 Confirm that you have docker installed on your operating system. If you do not have docker installed, follow the steps at the [Get Docker page](https://docs.docker.com/get-docker/) to install it.
 
-**Creating a copy of the template**
+## Creating a copy of the template
 
 The template for Standards documents is organized as a folder of asciidoc files, with nested folders for sections, abstract tests, requirements and other resources.
 
@@ -24,7 +24,7 @@ NOTE: The `-d standard -t ogc` flags instruct metanorma that the template is for
 
 NOTE: The `folder_for_standard` value can be replaced with whatever you would like to be the name of the folder that contains the copy of the template.
 
-**Editing a Draft OGC Standard for compilation with Metanorma**
+## Editing a Draft OGC Standard for compilation with Metanorma
 
 Now that you have generated a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/authoring/
 
@@ -36,7 +36,7 @@ Refer to the authoring guidelines for the complete list of document properties.
 
 NOTE: If there are multiple editors, the names of the editors are listed in the sequence `fullname`, `fullname_2`, `fullname_3`,...
 
-**Compiling a Draft OGC Standard with Metanorma**
+## Compiling a Draft OGC Standard with Metanorma
 
 To convert the draft standard from asciidoc format to HTML and PDF formats, we use the metanorma software to **compile** the document.
 
