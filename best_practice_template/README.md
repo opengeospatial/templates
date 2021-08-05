@@ -12,11 +12,11 @@ The template for Best Practice documents is organized as a folder of asciidoc fi
 
 To create a copy of the template, follow these steps.
 
-Step 1. Pull the latest version of the Metanorma image on to your local docker installation.
+**Step 1**. Pull the latest version of the Metanorma image on to your local docker installation.
 
 `docker pull metanorma/mn:latest`
 
-Step 2.  Generate a copy of the template for OGC Best Practice documents by running the following command from a terminal (i.e. from the command prompt).
+**Step 2**.  Generate a copy of the template for OGC Best Practice documents by running the following command from a terminal (i.e. from the command prompt).
 
 `docker run -v "$(pwd)":/metanorma metanorma/mn  metanorma new -d best-practice -t ogc  -l https://github.com/metanorma/mn-templates-ogc folder_for_best_practice`
 
@@ -28,9 +28,9 @@ NOTE: The `folder_for_best_practice` value can be replaced with whatever you wou
 
 Now that you have generated a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/authoring/
 
-Step 3. Next, edit the asciidoc file `document.adoc` by filling the document properties: `status`, `abbrev`, `edition` (i.e. version of the document), `docnumber` (OGC Document Number), `keywords`, `fullname` (of the editors).
+**Step 3**. Next, edit the asciidoc file `document.adoc` by filling the document properties: `status`, `abbrev`, `edition` (i.e. version of the document), `docnumber` (OGC Document Number), `keywords`, `fullname` (of the editors).
 
-Step 4. Ensure that the `doctype` property is set to `best-practice`.
+**Step 4**. Ensure that the `doctype` property is set to `best-practice`.
 
 Refer to the authoring guidelines for the complete list of document properties.
 
@@ -40,7 +40,7 @@ NOTE: If there are multiple editors, the names of the editors are listed in the 
 
 To convert the draft OGC Best Practice from asciidoc format to HTML and PDF formats, we use the metanorma software to **compile** the document.
 
-Step 5. From the folder containing the `document.adoc` file, run the following command.
+**Step 5**. From the folder containing the `document.adoc` file, run the following command.
 
 `docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,doc document.adoc`
 
