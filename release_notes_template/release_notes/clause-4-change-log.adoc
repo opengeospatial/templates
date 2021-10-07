@@ -6,11 +6,12 @@
 * Source:
 ** Change Request (CR)
 ** GitHub Issue
-** Editor - The CDB document Editor
-** OGC-NA - OGC Naming Authority review
-** Public - Public Comment period
-** SWG decision
-** User - The CDB User Community
+** Editor - The document editor
+** OGC Architecture Board (OAB) review
+** OGC Naming Authority (OGC-NA) review
+** Public Comment Period review
+** Standards Working Group (SWG) decision
+** User Community
 ** Other
 
 * Identifier: Change Request number or issue number and pull request/commit in GitHub
