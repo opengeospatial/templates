@@ -45,3 +45,11 @@ All questions regarding this submission should be directed to the editor or the 
 |*Name* |*Affiliation*
 | |
 |===
+
+[big]*vii.     Contributors*
+
+//This clause is optional.
+
+Additional contributors to this Standard include the following:
+
+Individual name(s), Organization
