@@ -6,11 +6,11 @@
 * Source:
 ** Change Request (CR)
 ** GitHub Issue
-** Editor - The CDB document Editor
+** Editor - The Document Editor
 ** OGC-NA - OGC Naming Authority review
 ** Public - Public Comment period
 ** SWG decision
-** User - The CDB User Community
+** User - The User Community
 ** Other
 
 * Identifier: Change Request number or issue number and pull request/commit in GitHub
@@ -34,6 +34,7 @@ See <<Clause_Critical>> for more information on critical changes and
 ** Perfunctory
 ** Readability
 ** Usability
+** Correctness
 
 
 === Change Table
