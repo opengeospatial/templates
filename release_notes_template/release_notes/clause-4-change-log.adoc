@@ -35,6 +35,7 @@ See <<Clause_Critical>> for more information on critical changes and
 ** Perfunctory
 ** Readability
 ** Usability
+** Correctness
 
 
 === Change Table
