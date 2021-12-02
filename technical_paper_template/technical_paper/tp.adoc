@@ -1,4 +1,4 @@
-:Title: Release Notes for OGC (add title text)
+:Title: OGC (add title text)
 :titletext: {Title}
 :doctype: book
 :encoding: utf-8
@@ -18,9 +18,9 @@
 |Submission Date: <yyyy-mm-dd>
 |Approval Date:   <yyyy-mm-dd>
 |Publication Date:   <yyyy-mm-dd>
-|Reference URL for this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
+|External identifier of this OGC(R) document: http://www.opengis.net/doc/{doc-type}/{standard}/{m.n}
 |Internal reference number of this OGC(R) document:    YY-nnnrx
-|Category: Release Notes
+|Category: OGC(R) Technical Paper
 |Editor:   <Name(s) of Editor or Editors>
 |===
 
@@ -47,13 +47,11 @@
 |*Warning*
 |===
 
-This document is not an OGC Standard. This document provides release notes for an OGC Standard. This document is subject to change without notice and may not be referred to as an OGC Standard.
-
-Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+This document is not an OGC Standard. This document is an OGC Technical Paper and is therefore not an official position of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard. Further, an OGC Technical Paper should not be referenced as required or mandatory technology in procurements.
 
 [width = "50%", grid = "none"]
 |===
-|Document type:   	Release Notes
+|Document type:   	OGC® Technical Paper
 |Document subtype:
 |Document stage:   	Draft
 |Document language: 	English
@@ -65,43 +63,23 @@ toc::[]
 
 <<<
 
-include::clause-0-preface.adoc[]
-
-include::clause-1-intro.adoc[]
-
-include::clause-2-references.adoc[]
-
-include::clause-3-terms.adoc[]
-
-include::clause-4-change-log.adoc[]
-
-include::clause-5-critical.adoc[]
-
-include::clause-6-substantive.adoc[]
-
-include::clause-7-future.adoc[]
-
 ////
-add major sections (clauses) as necessary
+Make sure to complete each included document
 ////
+include::clause_0_front_material.adoc[]
 
-//include::clause-8-topic.adoc[]
-//include::clause-9-topic.adoc[]
+include::clause_1.adoc[]
 
+<<<
+//use annexes as needed
+include::annex-n.adoc[]
 
-////
-add or remove annexes as necessary
-////
-//include::annex-a.adoc[]
-
-//include::annex-b.adoc[]
-
-//include::annex-c.adoc[]
-
+<<<
 ////
 Revision History should be the last annex before the Bibliography
 Bibliography should be the last annex
 ////
 include::annex-history.adoc[]
 
+<<<
 include::annex-bibliography.adoc[]
