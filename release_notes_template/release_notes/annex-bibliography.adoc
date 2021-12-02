@@ -1,5 +1,0 @@
-[appendix]
-[[Bibliography]]
-= Bibliography
-
-//list any non-normative references present in these Release Notes, but do not provide a list of new references from the revised standard.
