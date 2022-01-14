@@ -36,7 +36,7 @@ Refer to the authoring guidelines for the complete list of document properties.
 
 NOTE: If there are multiple editors, the names of the editors are listed in the sequence `fullname`, `fullname_2`, `fullname_3`,...
 
-## Compiling a Draft OGC User Guide document with Metanorma
+## Compiling a Draft OGC User Guide document with a docker-containerized Metanorma instance
 
 To convert the draft OGC User Guide from asciidoc format to HTML and PDF formats, we use the metanorma software to **compile** the document.
 

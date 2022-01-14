@@ -1,0 +1,9 @@
+
+== Scope
+
+<Insert scope text here.>
+
+[NOTE]
+====
+Give the subject of the document and aspects of the scope covered by the document.
+====

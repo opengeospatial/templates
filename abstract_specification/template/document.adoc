@@ -1,0 +1,54 @@
+= Abstract specification topic for OGC (add title text)
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:doctype: abstract-specification-topic
+:comment: ### Language of the document; mandatory. Specified in two-letter code: "en" for English, "fr" for French
+:language: en
+:comment: ### Document status/stage; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:status: approved
+:comment: ### Relevant committee; mandatory. The permitted types are: technical, planning, and strategic-member-advisory
+:committee: technical
+:comment: ### Version number; optional. Dot-delimited, preferably with this structure <version number>.<minor version number>
+:edition: 1.0
+:comment: ### Internal reference number; mandatory
+:docnumber: 15-104r5
+:comment: ### Date on which the standard was updated; mandatory
+:received-date: 2015-09-30
+:comment: ### Date on which the standard was approved by the issuing authority; mandatory
+:issued-date: 2017-06-13
+:comment: ### Date on which the standard was published; mandatory
+:published-date: 2017-08-01
+:comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
+:external-id: http://www.opengis.net/doc/AS/dggs/1.0
+:comment: ### Identifier embedded into a document type-specific external URL
+:referenceURLID: http://docs.opengeospatial.org/as/15-104r5/15-104r5.html
+:comment: ### Author one
+:fullname: Matthew Purss
+:comment: ### Role of the authors; mandatory
+:role: editor
+:comment: ### Comma delimited keywords; mandatory
+:keywords: ogcdoc, OGC document, Discrete Global Grid System, DGGS, Digital Earth, DGGScore, Spatial Reference System, Global Data Structure, Geographic Information Systems, DE-9IM, standard, specification
+:comment: ### Semicolon-delimited list of the submitting organizations; mandatory
+:submitting-organizations: Geoscience Australia; Landcare Research New Zealand; University of Calgary; PYXIS; SpaceCurve; Zhengzhou Institute of Surveying & Mapping; ESRI
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: ogc
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.org/author/ref/document-attributes/#caches, https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+
+// Clauses
+include::sections/00-preface.adoc[]
+include::sections/01-scope.adoc[]
+include::sections/02-conformance.adoc[]
+include::sections/03-references.adoc[]
+include::sections/04-terms_and_definitions.adoc[]
+include::sections/05-conventions.adoc[]
+
+// Add clause files as needed
+include::sections/06-other-clauses.adoc[]
+
+// Annexes (add annex files as needed)
+include::sections/aa-annexA.adoc[]
+
+// Bibliography should be the last annex
+include::sections/az-bibliography.adoc[]
+

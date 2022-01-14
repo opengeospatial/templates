@@ -36,7 +36,7 @@ Refer to the authoring guidelines for the complete list of document properties.
 
 NOTE: If there are multiple editors, the names of the editors are listed in the sequence `fullname`, `fullname_2`, `fullname_3`,...
 
-## Compiling a Draft Policy with Metanorma
+## Compiling a Draft Policy with a docker-containerized Metanorma instance
 
 To convert the draft Policy from asciidoc format to HTML and PDF formats, we use the metanorma software to **compile** the document.
 
