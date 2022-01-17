@@ -1,0 +1,4 @@
+
+== Environment and setup of the Catalog Certification program
+
+<Provide a general description of how to configure the environment for the Catalog Certification Program.>

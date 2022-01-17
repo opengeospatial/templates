@@ -1,0 +1,22 @@
+
+////
+Preface sections must include [.preface] attribute
+in order to get them placed in the preface area (and not in the main content).
+
+Keywords specified in document preamble will display in this area
+after the abstract
+////
+
+[.preface]
+== Introduction
+
+// Insert introduction content, adding subsections as needed
+
+Introduction content.
+
+
+[.preface]
+== Other sections
+
+// Insert any other sections as needed
+Other section content.
