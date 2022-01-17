@@ -1,0 +1,53 @@
+= Reference Model for OGC (add title text)
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:doctype: reference-model
+:comment: ### Document status/stage; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:status: published
+:comment: ### Relevant committee; mandatory. The permitted types are: technical, planning, and strategic-member-advisory
+:committee: technical
+:comment: ### Internal reference number; mandatory
+:docnumber: 08-062r7
+:comment: ### Version number; optional. Dot-delimited, preferably with this structure <version number>.<minor version number>
+:edition: 2.1
+:comment: ### Date on which the document was last updated; optional
+:revdate: 2011-12-19
+:comment: ### Date on which the standard was updated; mandatory
+:received-date: 2011-12-19
+:comment: ### Date on which the standard was approved by the issuing authority; mandatory
+:issued-date: 2011-12-19
+:comment: ### Date on which the standard was published; mandatory
+:published-date: 2011-12-19
+:comment: ###  Year when the copyright for the document was issued; optional
+:copyright-year: 2011
+:comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
+:external-id: http://www.opengis.net/doc/orm/2.1
+:comment: ### Author one
+:fullname: John Doe
+:comment: ### Author two
+:fullname_2: Jane Doe
+:comment: ### Role of the authors; optional. Supply only if correspoding author is an editor
+:role_2: editor
+:comment: ### Comma delimited keywords; mandatory
+:keywords: keyword_1, keyword_2, keyword_3, etc
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: ogc
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.org/author/ref/document-attributes/#caches, https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+
+// Clauses
+include::sections/00-preface.adoc[]
+
+// Add clause files as needed
+include::sections/01-other-clauses.adoc[]
+
+////
+Annexes
+Add annex files as needed
+Revision History should be the last annex
+////
+include::sections/aa-annexA.adoc[]
+include::sections/ab-revision_history.adoc[]
