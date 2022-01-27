@@ -7,7 +7,7 @@ For the purposes of this document, the following additional terms and definition
 ===	administrative change
 An administrative change is a change that does not alter the conformance abstract tests for any requirements. It includes typographical errors, changes in wording to improve clarity or consistency, and perfunctory changes such as changes in version numbers.
 
-=== critical Change
+=== critical change
 A critical change is a change that alters requirements in a way that is known to cause reverse compatibility issues.
 
 === substantive change
