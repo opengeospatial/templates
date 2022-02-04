@@ -6,17 +6,4 @@ Ensure that there is a conformance class for each requirements class and a test 
 
 === Conformance Class A
 
-==== Requirement 1
-[requirement,type="pseudocode",label="/req/req-class-a/req-name-1"]
-=====
-
-[verification,label="/conf/conf-class-a/req-name-1"]
-======
-Test purpose:: Verify that...
-
-Test method:: Inspect...
-======
-
-=====
-
-==== Requirement 2
+include::../abstract_tests/ATS_class_example1.adoc[]
