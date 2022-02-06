@@ -16,7 +16,7 @@ Confirm that you have Metanorma installed locally on your operating system. If y
 
 ### Editing a Draft OGC Reference Model document for compilation with Metanorma
 
-Now that you have obtained a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/authoring/
+Now that you have obtained a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/topics/markup/
 
 **Step 2**. Next, edit the asciidoc file `document.adoc` by filling the document properties: `docsubtype`, `status`, `abbrev`, `edition` (i.e. version of the document), `docnumber` (OGC Document Number), `keywords`, `fullname` (of the editors).
 
