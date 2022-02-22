@@ -62,7 +62,7 @@ NOTE: The `folder_for_abstract_specification_topic` value can be replaced with w
 
 ### Editing a Draft Abstract Specification Topic for compilation with Metanorma
 
-Now that you have generated a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/authoring/
+Now that you have generated a copy of the template, you can edit the document. The following steps assume that you have read the **authoring guidelines** are at https://www.metanorma.org/author/ogc/authoring-guide/
 
 **Step 3**. Next, edit the asciidoc file `document.adoc` by filling the document properties: `docsubtype`, `status`, `abbrev`, `edition` (i.e. version of the document), `docnumber` (OGC Document Number), `keywords`, `fullname` (of the editors).
 
