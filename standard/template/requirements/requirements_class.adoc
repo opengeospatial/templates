@@ -29,19 +29,14 @@ Requirements Class
 * urn:iso:ts:iso:19139:clause:6
 --
 
-[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1"]
-======
-requirement description
+[requirement,type="general",label="/req/req-class-a/req-name-1"]
 ======
 
-[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2"]
-======
-requirement description
 ======
 
-[requirement,type="general",id="http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3"]
+[requirement,type="general",label="/req/req-class-a/req-name-2"]
 ======
-requirement description
+
 ======
 
 ====
