@@ -1,0 +1,11 @@
+
+[appendix,obligation=informative]
+[[appendixA]]
+== Title
+
+<Insert annex content here.>
+
+[NOTE]
+====
+Place annex material in sequential order and set `obligation` attribute as "normative" (default) or "informative" according to the case.
+====

@@ -1,0 +1,9 @@
+
+== Other clauses
+
+<Insert clause content here>
+
+[NOTE]
+====
+Add any other clauses as needed
+====

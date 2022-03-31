@@ -1,0 +1,53 @@
+
+.Preface
+
+<Insert Preface text here.>
+
+[NOTE]
+====
+Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.
+
+There are two ways to specify the Preface: "simple clause" or "full clasuse"
+
+If the Preface does not contain subclauses, it is considered a simple preface clause. This one is entered as text after the `.Preface` label and must be placed between the AsciiDoc document attributes and the first AsciiDoc section title. It should not be give a section title of its own.
+
+If the Preface contains subclauses, it needs to be encoded as a full preface clause. This one is recognized as a full Metanorma AsciiDoc section with te title "Preface", i.e. `== Preface`. (Simple preface content can also be encoded like full preface.) 
+====
+
+
+[abstract]
+== Abstract
+
+<Insert abstract here.>
+
+
+[.preface]
+== Submitters
+
+All questions regarding this submission should be directed to the editor or the submitters:
+
+[%unnumbered]
+|===
+h| Name h| Affiliation
+| John Doe | Landcare Research New Zealand
+...
+|===
+
+
+[.preface]
+== Introduction
+
+<Insert introduction here.>
+
+
+[.preface]
+== Reference notes
+
+<Place reference notes here.>
+
+
+[NOTE]
+====
+If you need to place any further sections in the preface area
+use the `[.preface]` attribute.
+====

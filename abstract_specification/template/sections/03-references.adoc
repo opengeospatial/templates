@@ -1,0 +1,21 @@
+
+[bibliography]
+== References
+
+
+[NOTE]
+====
+If there are no references, leave this section empty.
+
+References are to follow the Springer LNCS style, with the exception that optional information may be appended to references: DOIs are added after the date and web resource references may include an access date at the end of the reference in parentheses. See examples from Springer and OGC below.
+====
+
+* [[[iso19101, ISO 19101-1:2014]]], ISO: ISO 19101-1:2014, _Geographic information – Reference model – Part 1: Fundamentals_, 2014
+
+* [[[iso19103, ISO 19103:2015]]], ISO: ISO 19103:2015, _Geographic information – Conceptual schema language,_ 2015
+
+* [[[ogc06103, OGC 06-103r4]]], OGC: OGC 06-103r4, _Implementation Standard for Geographic information – Simple feature access – Part 1: Common Architecture_. Version 1.2.1 _(identical in normative content to ISO 19125-1:2004)_, 2011
+
+* [[[ogc07036, OGC 07-036]]], OGC: OGC 07-036, _OpenGIS Geography Markup Language (GML) Encoding Standard_. _(identical in normative content to ISO 19136:2007)_, 2007
+
+

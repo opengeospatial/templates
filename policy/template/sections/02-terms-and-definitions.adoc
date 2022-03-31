@@ -1,0 +1,20 @@
+
+== Terms and definitions
+
+// Insert terms and definitions content
+
+// For example
+
+OGC Communication: A communication by any means, including posting on the WWW Site (http://www.opengeospatial.org), electronic mail, facsimile transmission, or by regular post. The primary forms of communication will be either via email or using the OGC Members Only Portal. Any member desiring delivery by other than electronic means (WWW site or electronic mail) must state so in written form to OGC staff.
+
+OGC standard: A document containing an OGC consensus computing technology dependent standard for application programming interfaces and related standards based on the Abstract Specification or domain-specific extensions to the Abstract Specification provided by domain experts. OGC standards generally have evidence of implementation.
+
+OGC Member, or Member: Any member in good standing.
+
+OGC Member Portal: A members’ only accessible component of the OGC web site. The Portal provides a location for storing and accessing all in progress OGC TC and PC documents, all WG agendas, working documents, and presentations, and to perform project management functions, such as tasks, tracking actions, and calendars.
+
+OGC Standards Program: Provides an industry consensus process to plan, review and officially adopt OGC Standards for interfaces and protocols that enable interoperable geoprocessing services, data, and applications. The OGC bodies involved in the Standard Program are the Technical Committee, Planning Committee, and Strategic Member Advisory Committee.
+
+Profile: [ISO 19106:2004, Type 1 Profile] A profile is a pure subset of an existing standard including restrictions on or deletions of conformance clauses related to the subsetting. An example of a profile is the GML Simple Feature Profile.
+
+Profile with Extension: A profile with extension is a set of one or more conformance clauses from a base standard that includes at least one new conformance clause (extension). An example is OpenGIS(R) Web Map Services - Profile for EO Products.

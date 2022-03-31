@@ -1,0 +1,14 @@
+
+== Terms and Definitions
+
+=== example term
+
+term used for exemplary purposes
+
+[.source]
+<<ogc07036>>
+
+NOTE: An example note.
+
+[example]
+Here's an example of an example term.
