@@ -4,7 +4,7 @@ The OGC uses the LNCS (Lecture Notes in Computer Science) citation style for bib
 
 To assist editors in creating and managing bibliographies when authoring documents in metanorma-asciidoc, a python script is provided in this folder.
 
-**Note that this utility is for advanced users.**
+**Note that this utility is for advanced users who are familiar with both the python language and metanorma-asciidoc.**
 
 First prepare the environment by installing the citeproc-py library. This is a one-time requirement.
 
