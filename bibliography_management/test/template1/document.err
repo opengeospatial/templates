@@ -1,0 +1,112 @@
+./document.err errors
+
+
+== Document Attributes
+
+(): 'Interface' is not a permitted subtype of Standard: reverting to 'implementation'
+(): draft is not an allowed status for standard
+
+
+== Anchors
+
+(XML Line 000204): Crossreference target OGC06-121r9 is undefined
+	<xref target="OGC06-121r9"/>
+(XML Line 000240): Crossreference target VanZyl2009 is undefined
+	<xref target="VanZyl2009"/>
+(XML Line 000254): Crossreference target Pross2018 is undefined
+	<xref target="Pross2018"/>
+(XML Line 000262): normalised identifier in <requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" obligation="requirement" type="class"/> from http://www.opengis.net/spec/ABCD/m.n/req/req-class-a
+	<requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" obligation="requirement" type="class"><description><p id="_5a03cb90-d25f-4b71-80b3-031724a4994a">Requirements Class</p><ul id="_d2bbbd39-6022-409d-8a9f-42eb30ef9cf7"><li><p id="_bc1c3788-35c4-4cc9-b53a-15dee560ceed"><link target="http://www.example.org/req/blah"/></p>
+	</li>
+	<li><p id="_b28c8323-6c94-41ec-8605-1b33ba1c7d7c">urn:iso:ts:iso:19139:clause:6</p>
+	</li>
+	</ul></description>
+(XML Line 000281): normalised identifier in <requirement id="_req_req-class-a_req-name-1" obligation="requirement" type="general"/> from /req/req-class-a/req-name-1
+	<requirement id="_req_req-class-a_req-name-1" obligation="requirement" type="general"> <label>/req/req-class-a/req-name-1</label><description><p id="_7c3217ce-2b70-489a-9ea7-2336142c29d1">Requirement ‘shall’ statement</p></description>
+	</requirement>
+(XML Line 000373): Crossreference target ats_core_api-definition-success is undefined
+	<xref target="ats_core_api-definition-success">/conf/core/api-definition-success</xref>
+(XML Line 000392): Crossreference target rfc2818 is undefined
+	<xref target="rfc2818">HTTP over TLS</xref>
+
+
+== Style
+
+(): Submitters is missing!
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000224): Hanging paragraph in clause
+	<clause id="_conventions" obligation="normative">
+	<title>Conventions</title>
+	<p id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+	
+	<clause id="_identifiers" obligation="normative">
+(XML Line 000238): Hanging paragraph in clause
+	<clause id="_clause_6_clauses_not_containing_normative_material" obligation="informative">
+	<title>Clause 6 Clauses not Containing Normative Material</title>
+	<p id="_702a14b5-5310-3a86-ed3d-dd53cee9c704">Paragraph <xref target="VanZyl2009"/></p>
+	
+	<clause id="_clauses_not_containing_normative_material_sub_clause_1" obligation="informative">
+(XML Line 000252): Hanging paragraph in clause
+	<clause id="_clause_7_clause_containing_normative_material" obligation="normative">
+	<title>Clause 7 Clause containing normative material</title>
+	<p id="_f89f4a74-97c5-c6d6-f98b-ca56a8d67b35">Paragraph <xref target="Pross2018"/></p>
+	
+	<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
+(XML Line 000256): Hanging paragraph in clause
+	<clause id="_requirement_class_a_or_requirement_a_example" obligation="normative">
+	<title>Requirement Class A or Requirement A Example</title>
+	<p id="_2571912e-e61e-678f-90b6-b6debf92814c">Paragraph – intro text for the requirement class.</p>
+	
+	<p id="_1ad1f3a4-290a-4b26-7f68-a63544f01832">Use the following table for Requirements Classes.</p>
+(XML Line 000286): Table should have title
+	<table id="_8eb52fe6-3fcc-58e4-0e63-f2332f311749" width="90%"><thead><tr><th valign="middle" align="left">Names</th>
+	<th valign="middle" align="left">Definition</th>
+	<th valign="middle" align="left">Data types and values</th>
+	<th valign="middle" align="left">Multiplicity and use</th>
+	</tr></thead>
+(XML Line 000337): Hanging paragraph in clause
+	<annex id="_conformance_class_abstract_test_suite_normative" obligation="informative">
+	<title>Conformance Class Abstract Test Suite (Normative)</title>
+	<note id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"><p id="_2f41c6a6-7963-8015-59ca-d74fafa8ae41">Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
+	</note>
+	
+(XML Line 000342): Hanging paragraph in clause
+	<clause id="_conformance_class_a" obligation="informative">
+	<title>Conformance Class A</title>
+	<example id="ats_example1"><dl id="_15f5af59-2acb-8c62-5214-bd022c8135d7" metadata="true"><dt>label</dt>
+	<dd><p id="_2911e33b-d582-a069-a4d1-a0018ea97641"><link target="http://www.opengis.net/spec/name-of-standard/1.0/conf/example1"/></p>
+	</dd>
+(XML Line 000406): Table should have title
+	<table id="_5afe311c-d3e8-fb9a-9455-6031fbbc3118" width="90%"><thead><tr><th valign="middle" align="left">Date</th>
+	<th valign="middle" align="left">Release</th>
+	<th valign="middle" align="left">Editor</th>
+	<th valign="middle" align="left">Primary clauses modified</th>
+	<th valign="middle" align="left">Description</th>
+
+
+== Requirements
+
+(XML Line 000262): Requirement class http___www.opengis.net_spec_ABCD_m.n_req_req-class-a has no corresponding Conformance class test
+	<requirement id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" obligation="requirement" type="class"><description><p id="_afbd9ff1-48f9-3d6b-bf2d-9cf250b73503">Requirements Class</p><ul id="_91cca0de-3eef-25f5-a1bd-876ed4308711"><li><p id="_0764fa86-d4c1-8091-85da-a1c641af2180"><link target="http://www.example.org/req/blah"/></p>
+	</li>
+	<li><p id="_f546d3c6-46d2-36f5-e566-79f27052171a">urn:iso:ts:iso:19139:clause:6</p>
+	</li>
+	</ul></description>
+(XML Line 000270): Requirement _7f6a1c1d-b057-43c5-a0e8-0128fc71927e has no corresponding Conformance test
+	<requirement id="_7f6a1c1d-b057-43c5-a0e8-0128fc71927e" type="general"> <label>/req/req-class-a/req-name-1</label></requirement>
+(XML Line 000272): Requirement _20c41825-6804-06a1-6420-6a3c8ccbca5d has no corresponding Conformance test
+	<requirement id="_20c41825-6804-06a1-6420-6a3c8ccbca5d" type="general"> <label>/req/req-class-a/req-name-2</label></requirement>
+(XML Line 000281): Requirement _req_req-class-a_req-name-1 has no corresponding Conformance test
+	<requirement id="_req_req-class-a_req-name-1" obligation="requirement" type="general"> <label>/req/req-class-a/req-name-1</label><description><p id="_67d36439-8c91-09ae-02eb-29329f388ff4">Requirement ‘shall’ statement</p></description>
+	</requirement>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000148:104): element "clause" not allowed here; expected the element end-tag or element "submitters"
+(XML Line 000330:91): attribute "metadata" not allowed here; expected attribute "keep-lines-together", "keep-with-next", "key", "multilingual-rendering" or "tag"
+(XML Line 000460:278): character content of element "from" invalid; must be a year
+(XML Line 000473:330): character content of element "from" invalid; must be a year

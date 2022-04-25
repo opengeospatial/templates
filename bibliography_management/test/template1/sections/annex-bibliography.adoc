@@ -1,0 +1,6 @@
+[bibliography]
+[[Bibliography]]
+== Bibliography
+
+* [[[vanzyl2009,1]]], van Zyl, T., Simonis, I., McFerren, G.: The Sensor Web: Systems of Sensor Systems. International Journal of Digital Earth. 2, 16–30 (2009).
+* [[[pross2018,2]]], Pross, B., Stasch, C.: OGC Testbed-13: Workflows Engineering Report. http://docs.opengeospatial.org/per/17-029r1.html[OGC 17-029r1],  Open Geospatial Consortium (2018).
