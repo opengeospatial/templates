@@ -5,11 +5,8 @@
 from dataclasses import fields
 import sys
 import xml.etree.ElementTree as ET
-# The references are parsed from a BibTeX database, so we import the
-# corresponding parser.
-from citeproc.source.bibtex import BibTeX
 
-# Import the citeproc-py classes we'll use below.
+from citeproc.source.bibtex import BibTeX
 from citeproc import CitationStylesStyle, CitationStylesBibliography
 from citeproc import formatter
 from citeproc import Citation, CitationItem
@@ -19,14 +16,6 @@ def exitWithErrorMessage(msg):
     print(msg)
     sys.exit(1)
 
-
-
-# cd "/Users/ogckm/Documents/GitHub/templates/bibliography_management/test/template1"
-# docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml document.adoc
-# cd /Users/ogckm/Documents/GitHub/templates/bibliography_management
-# python3 -m ogcbibtex "./test/bibtex.bib" "./test/lncs.csl" "./test/template1/document.xml" "./test/template1/sections/annex-bibliography.adoc" 
-# cd "/Users/ogckm/Documents/GitHub/templates/bibliography_management/test/template1"
-# docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,pdf document.adoc
 
 bibtext_db = ''
 style = ''
