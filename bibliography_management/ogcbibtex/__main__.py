@@ -63,11 +63,7 @@ bibliography = CitationStylesBibliography(bib_style, bib_source,
                                           formatter.plain)
 
 
-# Processing citations in a document needs to be done in two passes as for some
-# CSL styles, a citation can depend on the order of citations in the
-# bibliography and thus on citations following the current one.
-# For this reason, we first need to register all citations with the
-# CitationStylesBibliography.
+# Next we parse the document and register cross-references with CitationStylesBibliography.
 
 
 tree = ET.parse(sys.argv[3]) # e.g. './test/template1/document.xml'
@@ -81,10 +77,9 @@ for target in root.iter("{https://www.metanorma.org/ns/ogc}xref"):
     bibliography.register(citation1)
 
 
-# In the second pass, CitationStylesBibliography can generate citations.
-# CitationStylesBibliography.cite() requires a callback function to be passed
-# along to be called in case a CitationItem's key is not present in the
-# bibliography.
+# Next we generate the bibliography.
+# Note that the CitationStylesBibliography.cite() function requires a callback function to be used
+# in case a CitationItem's key is not present in the bibliography.
 
 def warn(citation_item):
     print("WARNING: Reference with key '{}' not found in the bibliography."
