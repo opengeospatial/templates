@@ -27,4 +27,4 @@ Then compile the document, with the newly generated bibliography.
 
 `cd "./templates/bibliography_management/test/template1"`
 
-`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,pdf document.adoc`
+`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,doc,pdf document.adoc`
