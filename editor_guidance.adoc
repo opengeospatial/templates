@@ -56,7 +56,7 @@ Great summaries of Active vs. Passive voice usage can be found https://www.aje.c
 
 === Tense
 
-Use the appropriate tense to provide the context for parts of the document. Tense can be mixed in a document. For instance, a standard describes a repeatable means to do something and thus should generally be in Present tense (each reader will be doing something in the present time). An Engineering Report that describes the activities that occurred in an Innovation Program initiative should generally be in Past tense (the document is reporting on something that happened in the past). However, an Engineering Report that provides a preliminary specification based on work done in an experiment should mostly be in Present tense as the specification is like a standard in that it is read to be implemented in the present. Finally, a document section describing future work should obviously be written in Future tense.
+Use the appropriate tense to provide the context for parts of the document. Tense can be mixed in a document. For instance, a standard describes a repeatable means to do something and thus should generally be in _present_ tense (each reader will be doing something in the present time). An Engineering Report that describes the activities that occurred in an Innovation Program initiative should generally be in _past_ tense (the document is reporting on something that happened in the past). However, an Engineering Report that provides a preliminary specification based on work done in an experiment should mostly be in present tense as the specification is like a standard in that it is read to be implemented in the present. Finally, a document section describing future work should obviously be written in _future_ tense.
 
 === Weird grammar rules you have always been taught (and sometimes should ignore)
 
@@ -100,6 +100,10 @@ _The Institute for Good Standards developed this standard, which provides models
 
 So use "it" sparingly. The same applies to "this, that, these, those...." It should come as no surprise that readers do not like to be confused ("it" was used correctly in this sentence... and so was "that").
 
+=== Case
+
+All text should follow _sentence case_: the first word and all proper names are capitalized, other words are lower case. The use of sentence case applies to all section headings as well (do not capitalize each word in the heading). The only exception to the use of sentence case is for the title of the document, which conveniently uses _title case_ (capitalize major words). Please see the APA Style guidance on https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case[case] for more information.
+
 === Punctuation
 
 *Placement*
@@ -119,7 +123,7 @@ Of course, some punctuation marks have special meaning in AsciiDoc, so the rules
 
 *Commas/Semicolons in lists*
 
-Two words: Oxford Comma. Always use the Oxford Comma, which means that when writing a list, put a comma between the second-to-last entry and the word "and." Without this comma, more complex sentences become very difficult to read as it becomes difficult to tell where a list ends and a new thought begins.
+Two words: *Oxford Comma*. Always use the Oxford Comma, which means that when writing a list, put a comma between the second-to-last entry and the word "and." Without this comma, more complex sentences become very difficult to read as it becomes difficult to tell where a list ends and a new thought begins. The internet is full of funny examples of how sentence meaning can radically change without this little punctuation mark.
 
 .Example
 ****

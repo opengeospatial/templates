@@ -1,5 +1,5 @@
 [[Clause_Substantive]]
-== Description of Substantive Changes
+== Description of substantive changes
 
 === <short name for the change>
 <details of the change>

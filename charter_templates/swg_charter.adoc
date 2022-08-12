@@ -79,13 +79,13 @@ Please feel free to forward this announcement to any other appropriate lists. Th
 Proposers will describe the purpose of the Standards Working Group and its overall mission in relation to OGC processes, the OGC Standards baseline, and OGC’s business plan.
 ////
 
-== Business Value Proposition
+== Business value proposition
 
 ////
 This section provides a statement describing the value of this standards activity in relation to the OGC Membership, the geospatial community, and the wider IT community. This statement can be in terms of the interoperability problem being solved, processing Change requests to meet market (and Member requirements), a policy requirement and/or some other business value proposition. The proposition described in this section does not have to be in economic terms.
 ////
 
-== Scope of Work
+== Scope of work
 
 ////
 This section describes the scope of work (SOW) for the work of the SWG. There are typically at least three (3) cases that justify the formation of a SWG: A group of members decide to develop a new OGC candidate Standard from scratch, there is a draft submission being discussed by OGC members, or there are outstanding Change Requests for an existing OGC Standard and a revision is required.
@@ -112,25 +112,25 @@ If processing change requests and performing a revision to an existing Standard,
 If processing a draft submission of a specification developed outside the OGC process, a clear statement of the relationship to the existing Standards baseline including statements related to overlap (if any) with existing OGC Standards functionality, harmonization issues, and so forth. This information is provided to allow a focus of the discussion on criteria for considering any new solution that may be incompatible with older ones, overlaps existing functionality in the current baseline, and criteria for either deprecating older solutions, or simultaneously endorsing more than one option.
 ////
 
-=== What is Out of Scope?
+=== What is out of scope?
 
 ////
 A short description of any activities that will be out of scope for the SWG. For example, a SWG may limit consideration of CRPs after a specified date or milestone.
 ////
 
-=== Specific Existing Work Used as Starting Point
+=== Specific existing work used as starting point
 
 ////
 This section provides reference information relevant to the work of the SWG. For example, a document reference for a draft submission or a list of CRPs for a SWG focused on revision to an adopted specification.
 ////
 
-=== Is This a Persistent SWG
+=== Is this a persistent SWG
 
 [x] YES
 
 [ ] NO
 
-=== When can the SWG be Inactivated
+=== When can the SWG be inactivated
 
 ////
 If this is not a persistent SWG, please define the criteria for determining when the SWG can be inactivated and the project archived. Please note that completion and archiving ensures that all files, wikis, emails, and so forth are archived and available for future viewing and use.
@@ -144,13 +144,13 @@ This section describes what the deliverables will be for this SWG activity. Deli
 This section also includes a preliminary schedule of activities. For example, an RFC focused SWG schedule would provide a plan and schedule that includes the start date, target date for release of the candidate Standard for public review, date for consolidation of comments, date for edits to document based on comments, and a final target date for making a recommendation to the Membership. This information will be made public and will also be used as input to a RoadMap for the document. Therefore, the more detail the better.
 ////
 
-=== Initial Deliverables
+=== Initial deliverables
 
 ////
 Describe the initial Standard(s) to be developed by the SWG.
 ////
 
-=== Additional SWG Tasks
+=== Additional SWG tasks
 
 ////
 Describe each additional Standard to be developed by the SWG as an additional task after the deliverables from the initial charter have been completed. This section is blank in a new charter, then is populated with each task approval request per the OGC TC Policies and Procedures.
@@ -162,7 +162,7 @@ Describe each additional Standard to be developed by the SWG as an additional ta
 
 [ ] RAND for fee
 
-== Anticipated Audience / Participants
+== Anticipated audience / participants
 
 ////
 Description of the target participants in this SWG. For example, if the SWG were focused on a candidate spatial query language standard: Those involved in the design, development, implementation, or use of elements listed above in "Scope of the Work".  This includes search service providers, prospective users of search services exposed as XML, information architects and bibliographic, metadata, and content provider.
@@ -170,7 +170,7 @@ Description of the target participants in this SWG. For example, if the SWG were
 This is not meant as a limiting statement but instead is intended to provide guidance to interested potential participants as to whether they wish to participate in this SWG.
 ////
 
-== Domain Working Group Endorsement
+== Domain Working Group endorsement
 
 ////
 The SWG will list all Domain Working Groups (DWGs) in which the SWG formation was discussed and/or chartered. If a DWG has specifically endorsed the formation of the SWG, then a statement of endorsement should be included.
@@ -184,7 +184,7 @@ The SWG will list all Domain Working Groups (DWGs) in which the SWG formation wa
 Describe the work environment of the SWG, including the use of GitHub or GitLab.
 ////
 
-=== Similar or Applicable Standards Work (OGC and Elsewhere)
+=== Similar or applicable standards work (OGC and elsewhere)
 
 ////
 The following Standards and projects may be relevant to the SWG's planned work, although none currently provide the functionality anticipated by this committee's deliverables:

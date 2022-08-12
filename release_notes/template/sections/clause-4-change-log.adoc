@@ -31,7 +31,7 @@ See <<Clause_Critical>> for more information on critical changes and
 ** Usability
 
 
-=== Change Table
+=== Change table
 [[table_change_log]]
 .Change Log
 [cols="1a,1a,1a,2a,6a,2a",options="header"]

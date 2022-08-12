@@ -84,7 +84,7 @@ A DWG may determine that they wish to have public collaboration, such as in tele
 Proposers will describe the purpose of the Domain Working Group and its overall mission in relation to OGC processes and activities.
 ////
 
-== Problem Statement
+== Problem statement
 
 ////
 The problem(s) associated with interoperability and geodata processing as they relate to the DWG needs to be defined.  The WG DOMAIN information community needs to be defined, (users, data, service, and technology providers).  Problems might be framed as barriers that need to be overcome.  It is these barriers that will ultimately suggest the nature of the OGC’s role and level of involvement and lead to a set of processes, activities, and organizational approaches whereby the DOMAIN community can, through OGC, come together to develop a common means for digitally representing and sharing domain related geospatial data, and for processing interoperability within mainstream information system environments.
@@ -96,13 +96,13 @@ The problem(s) associated with interoperability and geodata processing as they r
 General Scope of Domain Working Group.
 ////
 
-=== Charter Members
+=== Charter members
 
 The initial membership of the <DOMAIN WG> will consist of the following members and individuals with extensive education and experience in <DOMAIN> issues, namely:
 
 <NAME and AFFILIATION>
 
-=== Key Activities
+=== Key activities
 
 ////
 The DWG will need to define key activities it intends on undertaking.  Examples of such activity might be framed around the following considerations.
@@ -114,7 +114,7 @@ The DWG will need to define key activities it intends on undertaking.  Examples 
 3.	Define approach for engaging with the DOMAIN community to enlist their support.
 ////
 
-=== Business Case
+=== Business case
 
 ////
 Define the business case related to interoperability that confront the DOMAIN community. Examples of issues that might be discussed include:
@@ -140,9 +140,9 @@ Define the business case that requires resolution because businesses that are en
 Define what measures OGC should consider for developing guidelines that address business case issues and that lead to or suggest that process-related standards and other intervention strategies available via consortia approaches will best support the infrastructure of the information community to come together and to inform information community consumers.
 ////
 
-== Organizational Approach and Scope of Work
+== Organizational approach and scope of work
 
-=== <DOMAIN WG> Business Goals
+=== Business goals
 
 ////
 The <DOMAIN WG> will need to establish a set of business goals that frame the basis for determining the nature and type of recommendations made to OGC, framed around the above mentioned business issues.  Examples of the types of discussion for framing goals include
@@ -158,7 +158,7 @@ The <DOMAIN WG> will need to establish a set of business goals that frame the ba
 5.	Define the supporting infrastructure for the community to achieve these goals.
 ////
 
-=== <DOMAIN WG>: Mission and Role
+=== Mission and Role
 
 ////
 The DOMAIN WG will concern itself with technology and technology policy issues, focusing on geodata information and technology interests as related to that DOMAIN and the means by which those issues are appropriately factored into the OGC standards development process.
