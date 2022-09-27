@@ -1,0 +1,8 @@
+[[req_ogc-process-description_json-encoding]]
+[requirement]
+====
+[%metadata]
+label:: /req/ogc-process-description/json-encoding
+
+A JSON-encoded OGC process description SHALL validate against the JSON Schema: http://schemas.opengis.net/ogcapi/processes/part1/1.0/openapi/schemas/process.yaml[process.yaml].
+====

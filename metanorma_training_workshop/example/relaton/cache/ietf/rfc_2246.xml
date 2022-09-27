@@ -1,0 +1,51 @@
+<bibdata type="standard">
+  <title type="main" format="text/plain">The TLS Protocol Version 1.0</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc2246</uri>
+  <docidentifier type="IETF" primary="true">RFC 2246</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC2246</docidentifier>
+  <docnumber>RFC2246</docnumber>
+  <date type="published">
+    <on>1999-01</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">T. Dierks</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">C. Allen</completename>
+      </name>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p>This document specifies Version 1.0 of the Transport Layer Security (TLS) protocol.  The TLS protocol provides communications privacy over the Internet.  The protocol allows client/server applications to communicate in a way that is designed to prevent eavesdropping, tampering, or message forgery.</p>
+  </abstract>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC4346</formattedref>
+      <docidentifier type="IETF" primary="true">RFC4346</docidentifier>
+    </bibitem>
+  </relation>
+  <series>
+    <title format="text/plain">RFC</title>
+    <number>2246</number>
+  </series>
+  <keyword>transport</keyword>
+  <keyword>protocol</keyword>
+  <keyword>layer</keyword>
+  <keyword>authentication</keyword>
+  <keyword>privacy</keyword>
+  <ext>
+    <editorialgroup>
+      <committee>tls</committee>
+    </editorialgroup>
+  </ext>
+</bibdata>

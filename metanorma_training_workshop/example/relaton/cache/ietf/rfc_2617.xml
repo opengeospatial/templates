@@ -1,0 +1,108 @@
+<bibdata type="standard">
+  <title type="main" format="text/plain">HTTP Authentication: Basic and Digest Access Authentication</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc2617</uri>
+  <docidentifier type="IETF" primary="true">RFC 2617</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC2617</docidentifier>
+  <docnumber>RFC2617</docnumber>
+  <date type="published">
+    <on>1999-06</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">J. Franks</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">P. Hallam-Baker</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">J. Hostetler</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">S. Lawrence</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">P. Leach</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">A. Luotonen</completename>
+      </name>
+    </person>
+  </contributor>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">L. Stewart</completename>
+      </name>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p>This document provides the specification for HTTP's authentication framework, the original Basic authentication scheme and a scheme based on cryptographic hashes, referred to as "Digest Access Authentication". [STANDARDS-TRACK]</p>
+  </abstract>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC7235</formattedref>
+      <docidentifier type="IETF" primary="true">RFC7235</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC7615</formattedref>
+      <docidentifier type="IETF" primary="true">RFC7615</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC7616</formattedref>
+      <docidentifier type="IETF" primary="true">RFC7616</docidentifier>
+    </bibitem>
+  </relation>
+  <relation type="obsoletedBy">
+    <bibitem>
+      <formattedref format="text/plain">RFC7617</formattedref>
+      <docidentifier type="IETF" primary="true">RFC7617</docidentifier>
+    </bibitem>
+  </relation>
+  <series>
+    <title format="text/plain">RFC</title>
+    <number>2617</number>
+  </series>
+  <keyword>HTTP</keyword>
+  <keyword>security</keyword>
+  <keyword>encryption</keyword>
+  <keyword>hypertext transfer protocol</keyword>
+  <ext>
+    <editorialgroup>
+      <committee>http</committee>
+    </editorialgroup>
+  </ext>
+</bibdata>

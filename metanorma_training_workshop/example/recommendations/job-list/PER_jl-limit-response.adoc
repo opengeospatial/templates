@@ -1,0 +1,7 @@
+[[per_job-list_limit-response]]
+[permission]
+====
+[%metadata]
+label:: /per/job-list/limit-response
+part:: The server MAY return fewer jobs than requested (but not more).
+====

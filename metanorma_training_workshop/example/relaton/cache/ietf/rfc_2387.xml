@@ -1,0 +1,37 @@
+<bibdata type="standard">
+  <title type="main" format="text/plain">The MIME Multipart/Related Content-type</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc2387</uri>
+  <docidentifier type="IETF" primary="true">RFC 2387</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC2387</docidentifier>
+  <docnumber>RFC2387</docnumber>
+  <date type="published">
+    <on>1998-08</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">E. Levinson</completename>
+      </name>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p>This document defines the Multipart/Related content-type and provides examples of its use. [STANDARDS-TRACK]</p>
+  </abstract>
+  <series>
+    <title format="text/plain">RFC</title>
+    <number>2387</number>
+  </series>
+  <keyword>MIME-RELAT</keyword>
+  <keyword>multipurpose internet mail extensions</keyword>
+  <keyword>body</keyword>
+  <keyword>parts</keyword>
+  <keyword>media-type</keyword>
+  <ext>
+    <editorialgroup>
+      <committee>mhtml</committee>
+    </editorialgroup>
+  </ext>
+</bibdata>

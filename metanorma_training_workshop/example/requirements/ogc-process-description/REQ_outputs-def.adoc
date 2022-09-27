@@ -1,0 +1,15 @@
+[[req_ogc-process-description_outputs-def]]
+[requirement]
+====
+[%metadata]
+label:: /req/ogc-process-description/outputs-def
+[.component,class=part]
+--
+Each process output definition SHALL be listed in the `outputs` section according to the JSON Schema: http://schemas.opengis.net/ogcapi/processes/part1/1.0/openapi/schemas/outputDescription.yaml[outputDescription.yaml].
+--
+
+[.component,class=part]
+--
+The key of each process input in the `output` section of the process definition SHALL be the identifier for that output.
+--
+====

@@ -1,0 +1,10 @@
+[[req_oas30_oas-definition-2]]
+[requirement]
+====
+[%metadata]
+label:: /req/oas30/oas-definition-2
+
+
+The JSON representation SHALL conform to the
+<<OpenAPI-Spec,OpenAPI Specification, version 3.0>>.
+====

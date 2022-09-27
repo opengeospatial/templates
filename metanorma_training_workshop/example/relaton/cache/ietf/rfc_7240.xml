@@ -1,0 +1,29 @@
+<bibdata type="standard">
+  <title type="main" format="text/plain">Prefer Header for HTTP</title>
+  <uri type="src">https://www.rfc-editor.org/info/rfc7240</uri>
+  <docidentifier type="IETF" primary="true">RFC 7240</docidentifier>
+  <docidentifier type="DOI">10.17487/RFC7240</docidentifier>
+  <docnumber>RFC7240</docnumber>
+  <date type="published">
+    <on>2014-06</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <person>
+      <name>
+        <completename language="en" script="Latn">J. Snell</completename>
+      </name>
+    </person>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <abstract format="text/html" language="en" script="Latn">
+    <p>This specification defines an HTTP header field that can be used by a client to request that certain behaviors be employed by a server while processing a request.</p>
+  </abstract>
+  <series>
+    <title format="text/plain">RFC</title>
+    <number>7240</number>
+  </series>
+  <keyword>http</keyword>
+  <keyword>prefer</keyword>
+</bibdata>
