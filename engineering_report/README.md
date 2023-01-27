@@ -50,11 +50,11 @@ To create a copy of the template, follow these steps.
 
 **Step 1**. Pull the latest version of the Metanorma image on to your local docker installation.
 
-`docker pull metanorma/mn:latest`
+`docker pull metanorma/metanorma:latest`
 
 **Step 2**.  Generate a copy of the template for OGC Engineering Report documents by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/mn  metanorma new -d engineering-report -t ogc  -l https://github.com/metanorma/mn-templates-ogc folder_for_engineering_report`
+`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d engineering-report -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_engineering_report`
 
 NOTE: The `-d engineering-report -t ogc` flags instruct metanorma that the template is for OGC Engineering Report documents.
 
@@ -78,6 +78,6 @@ To convert the draft OGC Engineering Report from asciidoc format to HTML and PDF
 
 **Step 5**. From the folder containing the `document.adoc` file, run the following command.
 
-`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,doc document.adoc`
+`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/metanorma  metanorma compile --agree-to-terms -t ogc -x xml,html,doc document.adoc`
 
 NOTE: You need to add this option to retrieve licensed fonts  `--agree-to-terms`
