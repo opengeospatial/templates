@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for OGC Standards by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d standard -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_standard`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d standard -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_standard`
 
 NOTE: The `-d standard -t ogc` flags instruct metanorma that the template is for OGC Standards.
 

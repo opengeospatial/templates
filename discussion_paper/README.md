@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for OGC Discussion Paper documents by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d discussion-paper -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_discussion_paper`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d discussion-paper -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_discussion_paper`
 
 NOTE: The `-d discussion-paper -t ogc` flags instruct metanorma that the template is for OGC Discussion Paper documents.
 

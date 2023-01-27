@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for OGC Best Practice documents by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d best-practice -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_best_practice`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d best-practice -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_best_practice`
 
 NOTE: The `-d best-practice -t ogc` flags instruct metanorma that the template is for OGC Best Practice documents.
 

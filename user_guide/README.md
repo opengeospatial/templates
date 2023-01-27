@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for OGC User Guide documents by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d user-guide -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_user_guide`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d user-guide -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_user_guide`
 
 NOTE: The `-d user-guide -t ogc` flags instruct metanorma that the template is for OGC User Guide documents.
 

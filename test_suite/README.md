@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for OGC Test Suite documents by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d test-suite -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_test_suite`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d test-suite -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_test_suite`
 
 NOTE: The `-d test-suite -t ogc` flags instruct metanorma that the template is for OGC Test Suite documents.
 

@@ -54,7 +54,7 @@ To create a copy of the template, follow these steps.
 
 **Step 2**.  Generate a copy of the template for Abstract Specification Topic by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d abstract-specification-topic -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_abstract_specification_topic`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d abstract-specification-topic -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_abstract_specification_topic`
 
 NOTE: The `-d abstract-specification-topic -t ogc` flags instruct metanorma that the template is for OGC Standards.
 
