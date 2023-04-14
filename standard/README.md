@@ -50,11 +50,11 @@ To create a copy of the template, follow these steps.
 
 **Step 1**. Pull the latest version of the Metanorma image on to your local docker installation.
 
-`docker pull metanorma/mn:latest`
+`docker pull metanorma/metanorma:latest`
 
 **Step 2**.  Generate a copy of the template for OGC Standards by running the following command from a terminal (i.e. from the command prompt).
 
-`docker run -v "$(pwd)":/metanorma metanorma/mn  metanorma new -d standard -t ogc  -l https://github.com/metanorma/mn-templates-ogc folder_for_standard`
+`docker run --rm -v "$(pwd)":/metanorma metanorma/metanorma  metanorma new -d standard -t ogc  -l https://github.com/metanorma/metanorma-templates-ogc folder_for_standard`
 
 NOTE: The `-d standard -t ogc` flags instruct metanorma that the template is for OGC Standards.
 
@@ -78,6 +78,6 @@ To convert the draft standard from asciidoc format to HTML and PDF formats, we u
 
 **Step 5**. From the folder containing the `document.adoc` file, run the following command.
 
-`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/mn  metanorma compile --agree-to-terms -t ogc -x xml,html,doc document.adoc`
+`docker run -v "$(pwd)":/metanorma -v ${HOME}/.fontist/fonts/:/config/fonts  metanorma/metanorma  metanorma compile --agree-to-terms -t ogc -x xml,html,doc document.adoc`
 
 NOTE: You need to add this option to retrieve licensed fonts  `--agree-to-terms`
