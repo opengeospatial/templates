@@ -32,9 +32,7 @@ Attention is drawn to the possibility that some of the elements of this document
 
 <Insert Abstract Text here>
 
-== Keywords
 
-//Keywords inserted here by Metanorma
 
 == Preface
 
@@ -59,9 +57,7 @@ Independent of any authentication type VRRP includes a mechanism (setting TTL=25
 NOTE: The security measures discussed in the following sections only provide various kinds of authentication. No confidentiality is provided at all. This should be explicitly described as outside the scope....”
 ////
 
-== Submitting organizations
 
-// Submitting organizations inserted here by Metanorma
 
 == Submitters
 
