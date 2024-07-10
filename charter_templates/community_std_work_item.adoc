@@ -51,6 +51,12 @@ Once approved, the Community standard Work Item defined by this document is vali
 Summarize the proposed Community standard. In this summary, provide an overview of the geospatial interoperability requirements the proposed standard supports, the history of its development and use, and use cases.
 ////
 
+== Motivation of supporting OGC Members for this submission
+
+////
+Provide a brief paragraph from one or more supporting OGC members that describes why they are supporting this submission and how they feel it helps the geospatial community.
+////
+
 == Relationship to other OGC Standards
 
 ////
@@ -85,6 +91,12 @@ The following implementations use the proposed Community standard.
 ////
 Repeat for each implementation. Place a "x" in the appropriate box regarding complete implementation.
 Optionally, provide a narrative description of the extent of implementation of the proposed Community standard for those proposed standards that are very widely used.
+////
+
+== Information on adoption
+
+////
+Describe the breadth of adoption of the proposed Community Standard. For example, are the implementations widely used in the geospatial community or subsets of the community? Are implementations limited, but used by most organizations that need the capabilities of the proposed Community Standard? Does the proposed Community Standard serve an emerging part of the geospatial community?
 ////
 
 == Public availability
