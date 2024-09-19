@@ -1,22 +1,6 @@
 
-[introduction]
 == Introduction
 
-// Insert introduction content here.
+// Insert introduction content adding subsections as needed
 
-<Insert Introduction Text here>
-
-[aims]
-=== Aims
-
-<Insert Aims here>
-
-[objectives]
-=== Objectives
-
-<Insert Objectives here>
-
-[NOTE]
-====
-This section (Introduction) and the Topics, Outlook, and Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.
-====
+Introduction content.
