@@ -19,10 +19,10 @@
 :fullname: John Doe
 :comment: ### Author two
 :fullname_2: Jane Doe
-:comment: ### Role of the authors; optional. Supply only if correspoding author is an editor
+:comment: ### Role of the authors; optional. Supply only if corresponding author is an editor
 :role_2: editor
 :comment: ### Comma delimited keywords; mandatory
-:keywords: hackaton, application-to-the-cloud, testbed, docker, web service
+:keywords: hackathon, application-to-the-cloud, testbed, docker, web service
 :comment: ### Metanorma flavor; mandatory
 :mn-document-class: ogc
 :comment: ### Desired output formats; mandatory
@@ -33,24 +33,18 @@
 :local-cache-only:
 
 
-// Clauses
-include::sections/00-preface.adoc[]
+include::sections/00-executive_summary.adoc[]
+
 include::sections/01-introduction.adoc[]
-include::sections/02-terms_and_definitions.adoc[]
-include::sections/03-references.adoc[]
 
-// Add clause files as needed
-include::sections/04-other-clauses.adoc[]
+include::sections/02-topics.adoc[]
 
-////
-Annexes
-Add annex files as needed
-////
-include::sections/aa-annexA.adoc[]
+include::sections/03-outlook.adoc[]
 
-////
-Revision History should be the last annex before the Bibliography
-Bibliography should be the last annex
-////
-include::sections/ah-revision-history.adoc[]
-include::sections/az-bibliography.adoc[]
+include::sections/04-security_privacy_ethical.adoc[]
+
+include::sections/aa-annexA_bibliography.adoc[]
+
+include::sections/ab-annexB_abbreviations_acronyms.adoc[]
+
+include::sections/ac-annexC_technical_detail.adoc[]

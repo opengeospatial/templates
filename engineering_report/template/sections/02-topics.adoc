@@ -1,0 +1,36 @@
+[topics]
+== Topics 
+
+<Insert the main contents of the report here.  For your understanding, examples of styling for tables, figures, illustrations, small source code snipets, etc. will be included here.>
+
+[NOTE]
+====
+This section (Topics), the previous section (Introduction), the Outlook, and the Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.
+====
+
+Tables can be added as necessary. Modify the following example as needed.
+
+.Table Title
+[width="90%",options="header"]
+|===
+|Header A |Header B |Header C
+|row 1 |name 1 |description 1 
+|row 2 |name 2 |description 2 
+|row 3 |name 3 |description 3 
+|===
+
+
+Dictionary tables for requirements can be added as necessary. Modify the following example as needed.
+
+[width="90%",options="header"]
+|===
+|Names |Definition |Data types and values |Multiplicity and use
+|name 1 |definition of name 1 |float |One or more (mandatory)
+|name 2 |definition of name 2 |character string type, not empty |Zero or one (optional)
+|name 3 |definition of name 3 |GML:: Point PropertyType |One (mandatory)
+|===
+
+[[figure-anchor]] 
+.Figure title
+image::image1.png[{optional alt text}] 
+

@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="2.6.2" schema-version="v1.3.3">
+<bibdata type="standard">
+<title language="en" format="text/plain">Engineering report for OGC (add title text)</title>
+<docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</docidentifier><docidentifier type="ogc-internal" primary="true">18-046</docidentifier><docnumber>18-046</docnumber><date type="published"><on>2018-06-12</on></date><date type="issued"><on>2018-07-10</on></date><date type="received"><on>2018-12-20</on></date><contributor><role type="editor"/><person>
+<name><completename>John Doe</completename></name>
+</person></contributor><contributor><role type="editor"/><person>
+<name><completename>Jane Doe</completename></name>
+</person></contributor><contributor><role type="publisher"/><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></contributor><language current="true">en</language><script current="true">Latn</script><status><stage language="">published</stage><stage language="en">Published</stage></status><copyright><from>2024</from><owner><organization>
+<name>Open Geospatial Consortium</name>
+<abbreviation>OGC</abbreviation></organization></owner></copyright><keyword>hackathon</keyword><keyword>application-to-the-cloud</keyword><keyword>testbed</keyword><keyword>docker</keyword><keyword>web service</keyword><ext><doctype>engineering-report</doctype><editorialgroup><committee>technical</committee></editorialgroup></ext></bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="section" language="en">Section</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="continued" language="en">continued</localized-string><localized-string key="no_terms_boilerplate" language="en">No terms and definitions are listed in this document.
+</localized-string><localized-string key="internal_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+For the purposes of this document, the following additional terms and definitions apply.
+</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+For the purposes of this document, the terms and definitions given in % additionally apply.
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="en">This document uses the terms defined in https://portal.ogc.org/public_ogc/directives/directives.php[OGC Policy Directive 49], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.
+
+This document also uses terms defined in the OGC Standard for Modular specifications (https://portal.opengeospatial.org/files/?artifact_id=34762[OGC 08-131r3]), also known as the 'ModSpec'. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.
+
+For the purposes of this document, the terms and definitions given in % and the following additionally apply.
+</localized-string><localized-string key="no_information_available" language="en">[NO INFORMATION AVAILABLE]</localized-string><localized-string key="term_defined_in" language="en">(%)</localized-string><localized-string key="binary_and" language="en">%1 and %2</localized-string><localized-string key="multiple_and" language="en">%1, and %2</localized-string><localized-string key="binary_or" language="en">%1 or %2</localized-string><localized-string key="multiple_or" language="en">%1, or %2</localized-string><localized-string key="chain_and" language="en">%1 and %2</localized-string><localized-string key="chain_or" language="en">%1 or %2</localized-string><localized-string key="chain_from" language="en">%1 from %2</localized-string><localized-string key="chain_to" language="en">%1 to %2</localized-string><localized-string key="nested_xref" language="en">%1, %2</localized-string><localized-string key="list_nested_xref" language="en">%1 %2</localized-string><localized-string key="SpelloutRules" language="en">spellout-ordinal</localized-string><localized-string key="OrdinalRules" language="en">digits-ordinal</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="deflist" language="en">Definition List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="diagram" language="en">Diagram</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="box" language="en">Box</localized-string><localized-string key="no_identifier" language="en">(NO ID)</localized-string><localized-string key="recommendationtest" language="en">Recommendation test</localized-string><localized-string key="requirementtest" language="en">Requirement test</localized-string><localized-string key="permissiontest" language="en">Permission test</localized-string><localized-string key="recommendationclass" language="en">Recommendations class</localized-string><localized-string key="requirementclass" language="en">Requirements class</localized-string><localized-string key="permissionclass" language="en">Permissions class</localized-string><localized-string key="abstracttest" language="en">Abstract test</localized-string><localized-string key="conformanceclass" language="en">Conformance class</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="where_one" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="adapted" language="en">adapted</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="edition_ordinal" language="en">{{ var1 | ordinal_word: '', '' }} edition</localized-string><localized-string key="edition" language="en">edition</localized-string><localized-string key="version" language="en">version</localized-string><localized-string key="toc_figures" language="en">List of Figures</localized-string><localized-string key="toc_tables" language="en">List of Tables</localized-string><localized-string key="toc_recommendations" language="en">List of Recommendations</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="admonition.editorial" language="en">Editorial Note</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="grammar_abbrevs.masculine" language="en">m</localized-string><localized-string key="grammar_abbrevs.feminine" language="en">f</localized-string><localized-string key="grammar_abbrevs.neuter" language="en">n</localized-string><localized-string key="grammar_abbrevs.common" language="en">common</localized-string><localized-string key="grammar_abbrevs.singular" language="en">sg</localized-string><localized-string key="grammar_abbrevs.dual" language="en">dual</localized-string><localized-string key="grammar_abbrevs.pl" language="en">pl</localized-string><localized-string key="grammar_abbrevs.isPreposition" language="en">prep</localized-string><localized-string key="grammar_abbrevs.isParticiple" language="en">part</localized-string><localized-string key="grammar_abbrevs.isAdjective" language="en">adj</localized-string><localized-string key="grammar_abbrevs.isAdverb" language="en">adv</localized-string><localized-string key="grammar_abbrevs.isNoun" language="en">noun</localized-string><localized-string key="grammar_abbrevs.isVerb" language="en">verb</localized-string><localized-string key="relatedterms.deprecates" language="en">deprecates</localized-string><localized-string key="relatedterms.supersedes" language="en">supersedes</localized-string><localized-string key="relatedterms.narrower" language="en">narrower</localized-string><localized-string key="relatedterms.broader" language="en">broader</localized-string><localized-string key="relatedterms.equivalent" language="en">equivalent</localized-string><localized-string key="relatedterms.compare" language="en">compare</localized-string><localized-string key="relatedterms.contrast" language="en">contrast</localized-string><localized-string key="relatedterms.see" language="en">see</localized-string><localized-string key="relatedterms.seealso" language="en">see also</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="admitted" language="en">ALTERNATIVE</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="contributors_clause" language="en">Contributors</localized-string><localized-string key="dochistory" language="en">Revision history</localized-string><localized-string key="sourcecode" language="en">Listing</localized-string><localized-string key="table_of_figures" language="en">Table of Figures</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this document.</localized-string><localized-string key="submission_date" language="en">Submission Date</localized-string><localized-string key="approval_date" language="en">Approval Date</localized-string><localized-string key="publication_date" language="en">Publication Date</localized-string><localized-string key="author" language="en">Author</localized-string><localized-string key="editor_full" language="en">Editor</localized-string><localized-string key="contributor" language="en">Contributor</localized-string><localized-string key="stage_dict.draft" language="en">Draft</localized-string><localized-string key="stage_dict.work-item-draft" language="en">Work Item Draft</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Published</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.rescinded" language="en">Rescinded</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings><metanorma-extension><presentation-metadata><name>color-admonition-caution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-editor</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-important</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-note</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-safety-precaution</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-tip</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-todo</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-admonition-warning</name><value>rgb(79, 129, 189)</value></presentation-metadata><presentation-metadata><name>color-background-definition-description</name><value>rgb(242, 251, 255)</value></presentation-metadata><presentation-metadata><name>color-background-definition-term</name><value>rgb(215, 243, 255)</value></presentation-metadata><presentation-metadata><name>color-background-page</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-header</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-even</name><value>rgb(252, 246, 222)</value></presentation-metadata><presentation-metadata><name>color-background-table-row-odd</name><value>rgb(254, 252, 245)</value></presentation-metadata><presentation-metadata><name>color-background-term-admitted-label</name><value>rgb(223, 236, 249)</value></presentation-metadata><presentation-metadata><name>color-background-term-deprecated-label</name><value>rgb(237, 237, 238)</value></presentation-metadata><presentation-metadata><name>color-background-term-preferred-label</name><value>rgb(249, 235, 187)</value></presentation-metadata><presentation-metadata><name>color-background-text-label-legacy</name><value>rgb(33, 60, 107)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-1</name><value>rgb(237, 193, 35)</value></presentation-metadata><presentation-metadata><name>color-secondary-shade-2</name><value>rgb(246, 223, 140)</value></presentation-metadata><presentation-metadata><name>color-text</name><value>rgb(88, 89, 91)</value></presentation-metadata><presentation-metadata><name>color-text-title</name><value>rgb(33, 55, 92)</value></presentation-metadata><presentation-metadata><name>TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>HTML TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>DOC TOC Heading Levels</name><value>2</value></presentation-metadata><presentation-metadata><name>PDF TOC Heading Levels</name><value>2</value></presentation-metadata><metanorma><source><semantic__ogc-standard type="semantic" version="2.6.2" schema-version="v1.3.3">
+<semantic__bibdata type="standard">
+<semantic__title language="en" format="text/plain">Engineering report for OGC (add title text)</semantic__title>
+<semantic__docidentifier type="ogc-external">http://www.opengis.net/doc/PER/eoep-Hack2018</semantic__docidentifier><semantic__docidentifier type="ogc-internal" primary="true">18-046</semantic__docidentifier><semantic__docnumber>18-046</semantic__docnumber><semantic__date type="published"><semantic__on>2018-06-12</semantic__on></semantic__date><semantic__date type="issued"><semantic__on>2018-07-10</semantic__on></semantic__date><semantic__date type="received"><semantic__on>2018-12-20</semantic__on></semantic__date><semantic__contributor><semantic__role type="editor"/><semantic__person>
+<semantic__name><semantic__completename>John Doe</semantic__completename></semantic__name>
+</semantic__person></semantic__contributor><semantic__contributor><semantic__role type="editor"/><semantic__person>
+<semantic__name><semantic__completename>Jane Doe</semantic__completename></semantic__name>
+</semantic__person></semantic__contributor><semantic__contributor><semantic__role type="publisher"/><semantic__organization>
+<semantic__name>Open Geospatial Consortium</semantic__name>
+<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__contributor><semantic__language>en</semantic__language><semantic__script>Latn</semantic__script><semantic__status><semantic__stage>approved</semantic__stage></semantic__status><semantic__copyright><semantic__from>2024</semantic__from><semantic__owner><semantic__organization>
+<semantic__name>Open Geospatial Consortium</semantic__name>
+<semantic__abbreviation>OGC</semantic__abbreviation></semantic__organization></semantic__owner></semantic__copyright><semantic__keyword>hackathon</semantic__keyword><semantic__keyword>application-to-the-cloud</semantic__keyword><semantic__keyword>testbed</semantic__keyword><semantic__keyword>docker</semantic__keyword><semantic__keyword>web service</semantic__keyword><semantic__ext><semantic__doctype>engineering-report</semantic__doctype><semantic__editorialgroup><semantic__committee>technical</semantic__committee></semantic__editorialgroup></semantic__ext></semantic__bibdata><semantic__metanorma-extension><semantic__presentation-metadata><semantic__name>color-admonition-caution</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-editor</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-important</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-note</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-safety-precaution</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-tip</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-todo</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-admonition-warning</semantic__name><semantic__value>rgb(79, 129, 189)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-definition-description</semantic__name><semantic__value>rgb(242, 251, 255)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-definition-term</semantic__name><semantic__value>rgb(215, 243, 255)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-page</semantic__name><semantic__value>rgb(33, 55, 92)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-table-header</semantic__name><semantic__value>rgb(33, 55, 92)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-table-row-even</semantic__name><semantic__value>rgb(252, 246, 222)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-table-row-odd</semantic__name><semantic__value>rgb(254, 252, 245)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-term-admitted-label</semantic__name><semantic__value>rgb(223, 236, 249)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-term-deprecated-label</semantic__name><semantic__value>rgb(237, 237, 238)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-term-preferred-label</semantic__name><semantic__value>rgb(249, 235, 187)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-background-text-label-legacy</semantic__name><semantic__value>rgb(33, 60, 107)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-secondary-shade-1</semantic__name><semantic__value>rgb(237, 193, 35)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-secondary-shade-2</semantic__name><semantic__value>rgb(246, 223, 140)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-text</semantic__name><semantic__value>rgb(88, 89, 91)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>color-text-title</semantic__name><semantic__value>rgb(33, 55, 92)</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>HTML TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>DOC TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata><semantic__presentation-metadata><semantic__name>PDF TOC Heading Levels</semantic__name><semantic__value>2</semantic__value></semantic__presentation-metadata></semantic__metanorma-extension>
+<semantic__boilerplate><semantic__copyright-statement>
+
+<semantic__clause id="semantic___copyright_notice" obligation="normative">
+<semantic__title>Copyright notice</semantic__title>
+<semantic__p id="semantic___2134752c-90a7-17a0-762e-52d6d0a4d08a" align="center">Copyright © 2024 Open Geospatial Consortium<semantic__br/> To obtain additional rights of use, visit<semantic__link target="https://www.ogc.org/legal"/></semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___note" obligation="normative">
+<semantic__title>Note</semantic__title>
+<semantic__p id="semantic___11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</semantic__p>
+
+<semantic__p id="semantic___15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</semantic__p>
+</semantic__clause>
+</semantic__copyright-statement>
+
+<semantic__license-statement>
+
+<semantic__clause id="semantic___license_agreement" obligation="normative">
+<semantic__title>License Agreement</semantic__title>
+<semantic__p id="semantic___f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <semantic__link target="https://www.ogc.org/license"/></semantic__p>
+</semantic__clause>
+</semantic__license-statement>
+
+<semantic__legal-statement>
+
+<semantic__clause id="semantic___notice" obligation="normative">
+<semantic__title>Notice</semantic__title>
+<semantic__p id="semantic___d77564dd-5c08-f5db-c385-3f48de70a288">This document is not an OGC Standard. This document is an OGC Public Engineering Report created as a deliverable in an OGC Interoperability Initiative and is <semantic__em>not an official position</semantic__em> of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</semantic__p>
+
+<semantic__p id="semantic___4fd16e4e-920f-8043-296a-05b51b2afc3c">Further, any OGC Engineering Report should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.</semantic__p>
+</semantic__clause>
+</semantic__legal-statement>
+
+<semantic__feedback-statement>
+
+</semantic__feedback-statement>
+</semantic__boilerplate><semantic__preface><semantic__clause id="semantic___overview" type="overview" obligation="informative">
+<semantic__title>Overview</semantic__title>
+<semantic__p id="semantic___ccf3dd01-a390-b66b-66ea-10392474c1c7">&#x3c;Insert Overview Text here&#x3e;</semantic__p>
+</semantic__clause><semantic__clause id="semantic___future_outlook" type="future_outlook" obligation="informative">
+<semantic__title>Future Outlook</semantic__title>
+<semantic__p id="semantic___28d4c623-87ef-4ad8-4206-628d123f19d5">&#x3c;Insert Future Outlook Text here&#x3e;</semantic__p>
+</semantic__clause><semantic__clause id="semantic___value_proposition" type="value_proposition" obligation="informative">
+<semantic__title>Value Proposition</semantic__title>
+<semantic__p id="semantic___f3ebe8a8-fbff-695f-47d9-718db3ae017a">&#x3c;Insert Value Proposition Text here&#x3e;</semantic__p>
+</semantic__clause><semantic__clause id="semantic___executive_summary" type="executivesummary" obligation="informative">
+<semantic__title>Executive Summary</semantic__title>
+<semantic__note id="semantic___e91c9af5-8b48-36b3-2de3-2f96d06288e7"><semantic__p id="semantic___dc20b4bc-84a8-04d5-ea20-2d0f4181c6cf">This Executive Summary, including the Overview, Future Outlook and Value proposition, is a mandatory section for all Engineering Reports. The Executive Summary is a high-level overview of the document and should be written in a way that is accessible to a non-technical audience. It should provide a brief overview of the document, including the problem being addressed, the solution, and the benefits of the solution. The Executive Summary should ideally be 1 page, and can be no more than 2 page in length.</semantic__p>
+</semantic__note>
+</semantic__clause><semantic__submitters id="semantic___contributors" type="contributors">
+<semantic__title>Contributors</semantic__title>
+<semantic__p id="semantic___60b1643b-76a7-f154-a489-757cf275f9ed">All questions regarding this submission should be directed to the editor or the submitters:</semantic__p>
+
+<semantic__table id="semantic___cfd20da9-0c02-b418-863c-aa8444ecdf62" unnumbered="true"><semantic__thead><semantic__tr><semantic__th valign="middle" align="left">Name</semantic__th>
+<semantic__th valign="middle" align="left">Affiliation</semantic__th>
+<semantic__th valign="middle" align="left">OGC member</semantic__th>
+</semantic__tr></semantic__thead>
+<semantic__tbody><semantic__tr><semantic__td valign="middle" align="left">Steve Liang</semantic__td>
+<semantic__td valign="middle" align="left">University of Calgary, Canada / SensorUp Inc.</semantic__td>
+<semantic__td valign="middle" align="left">Yes</semantic__td>
+</semantic__tr></semantic__tbody>
+<semantic__note id="semantic___1da30629-49f5-ff9c-6ba1-a703957ba98a"><semantic__p id="semantic___d8b63bab-f2a3-4fab-758b-1abc3214bd73">If you need to place any further sections in the preface area use the <semantic__tt>[.preface]</semantic__tt> attribute. However this is not recommended.</semantic__p>
+</semantic__note></semantic__table>
+
+
+</semantic__submitters></semantic__preface><semantic__sections>
+
+
+
+
+
+
+
+
+<semantic__clause id="semantic___introduction" obligation="normative">
+<semantic__title>Introduction</semantic__title>
+<semantic__p id="semantic___bd8fab90-d4d0-f19c-9eda-9870fb921e15">Introduction content.</semantic__p>
+</semantic__clause>
+
+<semantic__clause id="semantic___topics" type="topics" obligation="normative">
+<semantic__title>Topics</semantic__title>
+<semantic__p id="semantic___d47701d5-7574-8af6-56c5-8ebff3ba5f96">&#x3c;Insert the main contents of the report here.  For your understanding, examples of styling for tables, figures, illustrations, small source code snipets, etc. will be included here.&#x3e;<semantic__note id="semantic___b4802e94-da4d-c926-6f65-ee2ef5b5940b"><semantic__p id="semantic___6ec2a383-9332-441e-e027-3d1a1d0cc303">This section (Topics), the previous section (Introduction), the Outlook, and the Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</semantic__p>
+</semantic__note></semantic__p>
+
+
+
+<semantic__p id="semantic___030c6c52-7a9a-b2d3-0503-a09c49b751db">Tables can be added as necessary. Modify the following example as needed.</semantic__p>
+
+<semantic__table id="semantic___0ca3a3ce-43f6-e158-1ef2-af53d24dd339" width="90%">
+<semantic__name>Table Title</semantic__name>
+<semantic__thead><semantic__tr><semantic__th valign="middle" align="left">Header A</semantic__th>
+<semantic__th valign="middle" align="left">Header B</semantic__th>
+<semantic__th valign="middle" align="left">Header C</semantic__th>
+</semantic__tr></semantic__thead>
+<semantic__tbody><semantic__tr><semantic__td valign="middle" align="left">row 1</semantic__td>
+<semantic__td valign="middle" align="left">name 1</semantic__td>
+<semantic__td valign="middle" align="left">description 1</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">row 2</semantic__td>
+<semantic__td valign="middle" align="left">name 2</semantic__td>
+<semantic__td valign="middle" align="left">description 2</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">row 3</semantic__td>
+<semantic__td valign="middle" align="left">name 3</semantic__td>
+<semantic__td valign="middle" align="left">description 3</semantic__td>
+</semantic__tr></semantic__tbody>
+</semantic__table>
+
+<semantic__p id="semantic___2d495d96-8c9b-c016-dc0b-ca0379aca9cf">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</semantic__p>
+
+<semantic__table id="semantic___16fc6591-e500-f35e-89e6-766856e2b804" width="90%"><semantic__thead><semantic__tr><semantic__th valign="middle" align="left">Names</semantic__th>
+<semantic__th valign="middle" align="left">Definition</semantic__th>
+<semantic__th valign="middle" align="left">Data types and values</semantic__th>
+<semantic__th valign="middle" align="left">Multiplicity and use</semantic__th>
+</semantic__tr></semantic__thead>
+<semantic__tbody><semantic__tr><semantic__td valign="middle" align="left">name 1</semantic__td>
+<semantic__td valign="middle" align="left">definition of name 1</semantic__td>
+<semantic__td valign="middle" align="left">float</semantic__td>
+<semantic__td valign="middle" align="left">One or more (mandatory)</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">name 2</semantic__td>
+<semantic__td valign="middle" align="left">definition of name 2</semantic__td>
+<semantic__td valign="middle" align="left">character string type, not empty</semantic__td>
+<semantic__td valign="middle" align="left">Zero or one (optional)</semantic__td>
+</semantic__tr><semantic__tr><semantic__td valign="middle" align="left">name 3</semantic__td>
+<semantic__td valign="middle" align="left">definition of name 3</semantic__td>
+<semantic__td valign="middle" align="left">GML:: Point PropertyType</semantic__td>
+<semantic__td valign="middle" align="left">One (mandatory)</semantic__td>
+</semantic__tr></semantic__tbody>
+</semantic__table>
+
+<semantic__figure id="semantic__figure-anchor">
+<semantic__name>Figure title</semantic__name>
+<semantic__image src="data:image/png;base64,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" mimetype="image/png" id="semantic___6426b41a-ba0c-a0f9-7e9b-a92eed359e56" height="auto" width="auto" alt="{optional alt text}"/></semantic__figure>
+</semantic__clause>
+
+<semantic__clause id="semantic___outlook" type="outlook" obligation="normative">
+<semantic__title>Outlook</semantic__title>
+<semantic__p id="semantic___44148a1e-ab70-99d3-7862-40c7f6c280fc">&#x3c;Insert the outlook here&#x3e;<semantic__note id="semantic___0e37a1f5-e763-2e90-41dd-dbd3d2bdf510"><semantic__p id="semantic___f53b3eef-ebf4-5dae-7972-74d17107783e">This section (Outlook), the previous sections (Introduction) and (Topics), and the Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</semantic__p>
+</semantic__note></semantic__p>
+
+
+</semantic__clause>
+
+<semantic__clause id="semantic___security_privacy_and_ethical_considerations" obligation="normative">
+<semantic__title>Security, Privacy and Ethical Considerations</semantic__title>
+<semantic__p id="semantic___1d04cdb0-0f60-d195-514a-81b0ed84e242">&#x3c;Insert the Security, Privacy and Ethical Considerations here&#x3e;<semantic__note id="semantic___ad95eeb6-7d88-6a41-8272-67adf4ec14be"><semantic__p id="semantic___4b96af3c-ef83-6f09-8bfd-d836f97bcad7">This section (Security, Privacy and Ethical Considerations), the previous sections (Introduction), (Topics), and (Outlook) are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</semantic__p>
+</semantic__note></semantic__p>
+
+
+</semantic__clause>
+
+
+
+
+
+
+</semantic__sections><semantic__annex id="semantic__annex-reference" obligation="normative">
+<semantic__title>Abbreviations/Acronyms</semantic__title>
+<semantic__definitions id="semantic___2ff48cee-3270-46f9-207f-2b4c72d5a019" type="abbreviated_terms" obligation="normative">
+<semantic__title>Abbreviated terms</semantic__title><semantic__dl id="semantic___ac5b7eef-cd3a-7793-25af-321a8bf6df0b"><semantic__dt id="semantic__symbol-Abbreviation">Abbreviation</semantic__dt><semantic__dd><semantic__p id="semantic___ba89ba5f-a602-78f2-9298-0e4955cea253">Explanation</semantic__p>
+</semantic__dd>
+<semantic__dt id="semantic__symbol-Abbreviation-1">Abbreviation</semantic__dt><semantic__dd><semantic__p id="semantic___326af75c-b864-3c21-c4d7-b276de05418f">Explanation</semantic__p>
+</semantic__dd>
+<semantic__dt id="semantic__symbol-Abbreviation-2">Abbreviation</semantic__dt><semantic__dd><semantic__p id="semantic___34bfa216-afda-f7be-6c84-433d03563015">Explanation</semantic__p>
+</semantic__dd></semantic__dl>
+</semantic__definitions></semantic__annex><semantic__annex id="semantic__annex-technical-detail" obligation="informative">
+<semantic__title>Technical Detail</semantic__title>
+<semantic__p id="semantic___d1b0c54f-5369-b232-db3a-0cb4b2ad28f8">&#x3c;Technical detail (material beyond 20/30 pages in the core content)section, which is not mandatory for the understanding of the document, can be placed in an annex.&#x3e;<semantic__note id="semantic___6a070e6a-0ab6-19a6-40b8-fc4714221aed"><semantic__p id="semantic___6d66e7dc-2ebc-4f7b-9843-1ab6d7401740">Place annex material in sequential order and set <semantic__tt>obligation</semantic__tt> attribute as “normative” (default) or “informative” according to the case.</semantic__p>
+
+<semantic__p id="semantic___63ce6ed0-58ed-d672-4772-ca7e9464e919">If additional annexes are needed, you can duplicate this section and change the <semantic__tt>id</semantic__tt> attribute (annex-technical-detail) to a unique value. You will also need to increment the filename.</semantic__p>
+</semantic__note></semantic__p>
+
+
+</semantic__annex><semantic__bibliography><semantic__references id="semantic__annex-bibliography" normative="false" obligation="informative" unnumbered="true">
+<semantic__title>Bibliography</semantic__title><semantic__bibitem id="semantic__ogc10-092r3" type="standard" schema-version="v1.2.9">
+  <semantic__fetched>2024-09-20</semantic__fetched>
+  
+<semantic__title type="title-main" format="text/plain" language="en" script="Latn">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</semantic__title>
+
+  
+<semantic__title type="main" format="text/plain" language="en" script="Latn">NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</semantic__title>
+
+  <semantic__uri type="src"/>
+  <semantic__uri type="obp">https://portal.ogc.org/files/?artifact_id=43734</semantic__uri>
+  <semantic__docidentifier type="OGC" primary="true">OGC 10-092r3</semantic__docidentifier><semantic__docidentifier type="metanorma">[NetCDF]</semantic__docidentifier><semantic__docidentifier scope="biblio-tag">OGC 10-092r3</semantic__docidentifier>
+  <semantic__date type="published">
+    <semantic__on>2011-04-05</semantic__on>
+  </semantic__date>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Ben Domenico</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="publisher"/>
+    <semantic__organization>
+      
+<semantic__name>Open Geospatial Consortium</semantic__name>
+
+    </semantic__organization>
+  </semantic__contributor>
+  <semantic__edition>3</semantic__edition>
+  <semantic__language>en</semantic__language>
+  <semantic__script>Latn</semantic__script>
+  <semantic__abstract format="text/plain" language="en" script="Latn">This document defines an OGC® Standard for encoding binary representations of space-time varying geo-referenced data. Specifically, this standard specifies the netCDF classic and 64-bit offset file binary encoding formats. This standard specifies a set of requirements that every netCDF classic or 64-bit offset binary encoding must fulfil.</semantic__abstract>
+  
+</semantic__bibitem><semantic__bibitem id="semantic__ogc14-084r2" type="standard" schema-version="v1.2.9">
+  <semantic__fetched>2024-09-20</semantic__fetched>
+  
+<semantic__title type="title-main" format="text/plain" language="en" script="Latn">OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</semantic__title>
+
+  
+<semantic__title type="main" format="text/plain" language="en" script="Latn">OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</semantic__title>
+
+  <semantic__uri type="src">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</semantic__uri>
+  <semantic__uri type="obp">https://docs.ogc.org/is/14-084r2/14-084r2.html</semantic__uri>
+  <semantic__docidentifier type="OGC" primary="true">OGC 14-084r2</semantic__docidentifier><semantic__docidentifier type="metanorma">[nofetch]</semantic__docidentifier><semantic__docidentifier scope="biblio-tag">OGC 14-084r2</semantic__docidentifier>
+  <semantic__date type="published">
+    <semantic__on>2015-02-17</semantic__on>
+  </semantic__date>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Akinori Asahara</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Ryosuke Shibasaki</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Nobuhiro Ishimaru</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>David Burggraf</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="publisher"/>
+    <semantic__organization>
+      
+<semantic__name>Open Geospatial Consortium</semantic__name>
+
+    </semantic__organization>
+  </semantic__contributor>
+  <semantic__edition>2</semantic__edition>
+  <semantic__language>en</semantic__language>
+  <semantic__script>Latn</semantic__script>
+  <semantic__abstract format="text/plain" language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</semantic__abstract>
+  
+</semantic__bibitem><semantic__bibitem id="semantic__ogc14-083r2" type="standard" schema-version="v1.2.9">
+  <semantic__fetched>2024-09-20</semantic__fetched>
+  
+<semantic__title type="title-main" format="text/plain" language="en" script="Latn">OGC® Moving Features Encoding Part I: XML Core</semantic__title>
+
+  
+<semantic__title type="main" format="text/plain" language="en" script="Latn">OGC® Moving Features Encoding Part I: XML Core</semantic__title>
+
+  <semantic__uri type="src">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</semantic__uri>
+  <semantic__uri type="obp">https://docs.ogc.org/is/14-083r2/14-083r2.html</semantic__uri>
+  <semantic__docidentifier type="OGC" primary="true">OGC 14-083r2</semantic__docidentifier><semantic__docidentifier scope="biblio-tag">OGC 14-083r2</semantic__docidentifier>
+  <semantic__date type="published">
+    <semantic__on>2015-02-17</semantic__on>
+  </semantic__date>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Akinori Asahara</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Ryosuke Shibasaki</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>Nobuhiro Ishimaru</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="author"/>
+    <semantic__person>
+      
+<semantic__name>  <semantic__completename>David Burggraf</semantic__completename> </semantic__name>
+
+    </semantic__person>
+  </semantic__contributor>
+  <semantic__contributor>
+    <semantic__role type="publisher"/>
+    <semantic__organization>
+      
+<semantic__name>Open Geospatial Consortium</semantic__name>
+
+    </semantic__organization>
+  </semantic__contributor>
+  <semantic__edition>2</semantic__edition>
+  <semantic__language>en</semantic__language>
+  <semantic__script>Latn</semantic__script>
+  <semantic__abstract format="text/plain" language="en" script="Latn">This OGC® Standard specifies standard encoding representations of movement of geographic features. The primary use case is information exchange.</semantic__abstract>
+  
+</semantic__bibitem><semantic__bibitem id="semantic__ogc11-165r2">
+  <semantic__formattedref format="application/x-isodoc+xml">OGC: OGC 11-165r2: CF-netCDF3 Data Model Extension standard, 2012</semantic__formattedref>
+  <semantic__docidentifier type="metanorma">[CF-netCDF3]</semantic__docidentifier>
+</semantic__bibitem><semantic__bibitem id="semantic__Simonis2018">
+  <semantic__formattedref format="application/x-isodoc+xml">Standardized Big Data Processing in Hybrid Clouds. In: Proceedings of the 4th International Conference on Geographical Information Systems Theory, Applications and Management — Volume 1: GISTAM, pp. 205–210. SciTePress (2018).</semantic__formattedref>
+  <semantic__docidentifier>Simonis, I.</semantic__docidentifier><semantic__docidentifier scope="biblio-tag">Simonis, I.</semantic__docidentifier>
+  
+</semantic__bibitem><semantic__bibitem id="semantic__netcdf">
+  <semantic__formattedref format="application/x-isodoc+xml">Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – <semantic__link target="http://cfconventions.org/">http://cfconventions.org/</semantic__link></semantic__formattedref>
+  <semantic__docidentifier type="metanorma">[6]</semantic__docidentifier>
+</semantic__bibitem><semantic__bibitem id="semantic__acdd">
+  <semantic__formattedref format="application/x-isodoc+xml">ESIP: Attribute Convention for Data Discovery (ACDD) – <semantic__link target="http://wiki.esipfed.org/index.php/"/></semantic__formattedref>
+  <semantic__docidentifier type="metanorma">[7]</semantic__docidentifier>
+</semantic__bibitem>
+
+
+
+
+
+
+
+
+
+
+
+
+</semantic__references></semantic__bibliography>
+</semantic__ogc-standard></source></metanorma><render><preprocess-xslt format="html">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',html,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="html">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="pdf">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'passthrough']">
+  <xsl:if test="contains(@formats,',pdf,')"> <!-- delimited -->
+  <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+  </xsl:if>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+
+<preprocess-xslt format="pdf">
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+  <xsl:template match="@* | node()"><xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy></xsl:template>
+<xsl:template match="*[local-name() = 'math-with-linebreak']">
+
+</xsl:template>
+<xsl:template match="*[local-name() = 'math-no-linebreak']">
+<xsl:apply-templates select="node()"/>
+</xsl:template>
+
+</xsl:stylesheet>
+
+</preprocess-xslt>
+<preprocess-xslt>
+  <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mn="https://www.metanorma.org/ns/ogc" version="1.0">
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
+    <xsl:preserve-space elements="*"/>
+    <xsl:template match="@* | node()">
+      <xsl:copy><xsl:apply-templates select="@* | node()"/></xsl:copy>
+    </xsl:template>
+    <xsl:template match="mn:note/mn:name">
+      <xsl:copy><xsl:apply-templates select="@*|node()"/><xsl:if test="normalize-space() != ''">:<mn:tab/></xsl:if></xsl:copy>
+    </xsl:template>
+  </xsl:stylesheet>
+</preprocess-xslt>
+
+</render><source-highlighter-css>sourcecode table td { padding: 5px; }
+sourcecode table pre { margin: 0; }
+sourcecode, sourcecode .w {
+  color: #444444;
+}
+sourcecode .cp {
+  color: #CC00A3;
+}
+sourcecode .cs {
+  color: #CC00A3;
+}
+sourcecode .c, sourcecode .ch, sourcecode .cd, sourcecode .cm, sourcecode .cpf, sourcecode .c1 {
+  color: #1E90FF;
+}
+sourcecode .kc {
+  color: #C34E00;
+}
+sourcecode .kd {
+  color: #0000FF;
+}
+sourcecode .kr {
+  color: #007575;
+}
+sourcecode .k, sourcecode .kn, sourcecode .kp, sourcecode .kt, sourcecode .kv {
+  color: #0000FF;
+}
+sourcecode .s, sourcecode .sb, sourcecode .sc, sourcecode .ld, sourcecode .sd, sourcecode .s2, sourcecode .se, sourcecode .sh, sourcecode .si, sourcecode .sx, sourcecode .sr, sourcecode .s1, sourcecode .ss {
+  color: #009C00;
+}
+sourcecode .sa {
+  color: #0000FF;
+}
+sourcecode .nb, sourcecode .bp {
+  color: #C34E00;
+}
+sourcecode .nt {
+  color: #0000FF;
+}
+</source-highlighter-css></metanorma-extension>
+<boilerplate><copyright-statement>
+
+<clause id="_copyright_notice" obligation="normative">
+<title depth="1">Copyright notice</title>
+<p id="_2134752c-90a7-17a0-762e-52d6d0a4d08a" align="center">Copyright © 2024 Open Geospatial Consortium<br/> To obtain additional rights of use, visit<link target="https://www.ogc.org/legal"/></p>
+</clause>
+
+<clause id="_note" obligation="normative">
+<title depth="1">Note</title>
+<p id="_11e88dba-9912-1a89-a82d-7291bf232191" align="left">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+<p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" align="left">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+</clause>
+</copyright-statement>
+
+<license-statement>
+
+<clause id="_license_agreement" obligation="normative">
+<title depth="1">License Agreement</title>
+<p id="_f5fe34fd-12e2-2bb7-8cd6-9d4cffa96538">Use of this document is subject to the license agreement at <link target="https://www.ogc.org/license"/></p>
+</clause>
+</license-statement>
+
+<legal-statement>
+
+<clause id="_notice" obligation="normative">
+<title depth="1">Notice</title>
+<p id="_d77564dd-5c08-f5db-c385-3f48de70a288">This document is not an OGC Standard. This document is an OGC Public Engineering Report created as a deliverable in an OGC Interoperability Initiative and is <em>not an official position</em> of the OGC membership. It is distributed for review and comment. It is subject to change without notice and may not be referred to as an OGC Standard.</p>
+
+<p id="_4fd16e4e-920f-8043-296a-05b51b2afc3c">Further, any OGC Engineering Report should not be referenced as required or mandatory technology in procurements. However, the discussions in this document could very well lead to the definition of an OGC Standard.</p>
+</clause>
+</legal-statement>
+
+<feedback-statement>
+
+</feedback-statement>
+</boilerplate><preface><clause type="toc" id="_e504aab0-0024-4a67-a013-0cf9a33123e9" displayorder="1"><title depth="1">Contents</title></clause>
+<clause id="_executive_summary" type="executivesummary" obligation="informative" displayorder="2">
+<title depth="1">I.<tab/>Executive Summary</title>
+<note id="_e91c9af5-8b48-36b3-2de3-2f96d06288e7"><name>NOTE</name><p id="_dc20b4bc-84a8-04d5-ea20-2d0f4181c6cf">This Executive Summary, including the Overview, Future Outlook and Value proposition, is a mandatory section for all Engineering Reports. The Executive Summary is a high-level overview of the document and should be written in a way that is accessible to a non-technical audience. It should provide a brief overview of the document, including the problem being addressed, the solution, and the benefits of the solution. The Executive Summary should ideally be 1 page, and can be no more than 2 page in length.</p>
+</note>
+</clause><clause id="_05408acb-9250-444c-97cd-fbd6382f11f0" type="keywords" displayorder="3">
+<title depth="1">II.<tab/>Keywords</title>
+<p>The following are keywords to be used by search engines and document catalogues.</p>
+<p>hackathon, application-to-the-cloud, testbed, docker, web service</p></clause>
+<submitters id="_contributors" type="contributors" displayorder="4">
+<title depth="1">III.<tab/>Contributors</title>
+<p id="_60b1643b-76a7-f154-a489-757cf275f9ed">All questions regarding this submission should be directed to the editor or the submitters:</p>
+
+<table id="_cfd20da9-0c02-b418-863c-aa8444ecdf62" unnumbered="true"><thead><tr><th valign="middle" align="left">Name</th>
+<th valign="middle" align="left">Affiliation</th>
+<th valign="middle" align="left">OGC member</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">Steve Liang</td>
+<td valign="middle" align="left">University of Calgary, Canada / SensorUp Inc.</td>
+<td valign="middle" align="left">Yes</td>
+</tr></tbody>
+<note id="_1da30629-49f5-ff9c-6ba1-a703957ba98a"><name>NOTE</name><p id="_d8b63bab-f2a3-4fab-758b-1abc3214bd73">If you need to place any further sections in the preface area use the <tt>[.preface]</tt> attribute. However this is not recommended.</p>
+</note></table>
+
+
+</submitters><clause id="_overview" type="overview" obligation="informative" displayorder="5">
+<title depth="1">IV.<tab/>Overview</title>
+<p id="_ccf3dd01-a390-b66b-66ea-10392474c1c7">&#x3c;Insert Overview Text here&#x3e;</p>
+</clause><clause id="_future_outlook" type="future_outlook" obligation="informative" displayorder="6">
+<title depth="1">V.<tab/>Future Outlook</title>
+<p id="_28d4c623-87ef-4ad8-4206-628d123f19d5">&#x3c;Insert Future Outlook Text here&#x3e;</p>
+</clause><clause id="_value_proposition" type="value_proposition" obligation="informative" displayorder="7">
+<title depth="1">VI.<tab/>Value Proposition</title>
+<p id="_f3ebe8a8-fbff-695f-47d9-718db3ae017a">&#x3c;Insert Value Proposition Text here&#x3e;</p>
+</clause></preface><sections>
+
+
+
+
+
+
+
+
+<clause id="_introduction" obligation="normative" displayorder="8">
+<title depth="1">1.<tab/>Introduction</title>
+<p id="_bd8fab90-d4d0-f19c-9eda-9870fb921e15">Introduction content.</p>
+</clause>
+
+<clause id="_topics" type="topics" obligation="normative" displayorder="9">
+<title depth="1">2.<tab/>Topics</title>
+<p id="_d47701d5-7574-8af6-56c5-8ebff3ba5f96">&#x3c;Insert the main contents of the report here.  For your understanding, examples of styling for tables, figures, illustrations, small source code snipets, etc. will be included here.&#x3e;<note id="_b4802e94-da4d-c926-6f65-ee2ef5b5940b"><name>NOTE</name><p id="_6ec2a383-9332-441e-e027-3d1a1d0cc303">This section (Topics), the previous section (Introduction), the Outlook, and the Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</p>
+</note></p>
+
+
+
+<p id="_030c6c52-7a9a-b2d3-0503-a09c49b751db">Tables can be added as necessary. Modify the following example as needed.</p>
+
+<table id="_0ca3a3ce-43f6-e158-1ef2-af53d24dd339" width="90%">
+<name>Table 1 — Table Title</name>
+<thead><tr><th valign="middle" align="left">Header A</th>
+<th valign="middle" align="left">Header B</th>
+<th valign="middle" align="left">Header C</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">row 1</td>
+<td valign="middle" align="left">name 1</td>
+<td valign="middle" align="left">description 1</td>
+</tr><tr><td valign="middle" align="left">row 2</td>
+<td valign="middle" align="left">name 2</td>
+<td valign="middle" align="left">description 2</td>
+</tr><tr><td valign="middle" align="left">row 3</td>
+<td valign="middle" align="left">name 3</td>
+<td valign="middle" align="left">description 3</td>
+</tr></tbody>
+</table>
+
+<p id="_2d495d96-8c9b-c016-dc0b-ca0379aca9cf">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
+
+<table id="_16fc6591-e500-f35e-89e6-766856e2b804" width="90%"><name>Table 2</name><thead><tr><th valign="middle" align="left">Names</th>
+<th valign="middle" align="left">Definition</th>
+<th valign="middle" align="left">Data types and values</th>
+<th valign="middle" align="left">Multiplicity and use</th>
+</tr></thead>
+<tbody><tr><td valign="middle" align="left">name 1</td>
+<td valign="middle" align="left">definition of name 1</td>
+<td valign="middle" align="left">float</td>
+<td valign="middle" align="left">One or more (mandatory)</td>
+</tr><tr><td valign="middle" align="left">name 2</td>
+<td valign="middle" align="left">definition of name 2</td>
+<td valign="middle" align="left">character string type, not empty</td>
+<td valign="middle" align="left">Zero or one (optional)</td>
+</tr><tr><td valign="middle" align="left">name 3</td>
+<td valign="middle" align="left">definition of name 3</td>
+<td valign="middle" align="left">GML:: Point PropertyType</td>
+<td valign="middle" align="left">One (mandatory)</td>
+</tr></tbody>
+</table>
+
+<figure id="figure-anchor">
+<name>Figure 1 — Figure title</name>
+<image src="data:image/png;base64,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" mimetype="image/png" id="_6426b41a-ba0c-a0f9-7e9b-a92eed359e56" height="auto" width="auto" alt="{optional alt text}"/></figure>
+</clause>
+
+<clause id="_outlook" type="outlook" obligation="normative" displayorder="10">
+<title depth="1">3.<tab/>Outlook</title>
+<p id="_44148a1e-ab70-99d3-7862-40c7f6c280fc">&#x3c;Insert the outlook here&#x3e;<note id="_0e37a1f5-e763-2e90-41dd-dbd3d2bdf510"><name>NOTE</name><p id="_f53b3eef-ebf4-5dae-7972-74d17107783e">This section (Outlook), the previous sections (Introduction) and (Topics), and the Security, Privacy and Ethical Considerations sections are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</p>
+</note></p>
+
+
+</clause>
+
+<clause id="_security_privacy_and_ethical_considerations" obligation="normative" displayorder="11">
+<title depth="1">4.<tab/>Security, Privacy and Ethical Considerations</title>
+<p id="_1d04cdb0-0f60-d195-514a-81b0ed84e242">&#x3c;Insert the Security, Privacy and Ethical Considerations here&#x3e;<note id="_ad95eeb6-7d88-6a41-8272-67adf4ec14be"><name>NOTE</name><p id="_4b96af3c-ef83-6f09-8bfd-d836f97bcad7">This section (Security, Privacy and Ethical Considerations), the previous sections (Introduction), (Topics), and (Outlook) are required for the final submission of the document. Combined, these sections should not exceed 30 pages.</p>
+</note></p>
+
+
+</clause>
+
+
+
+
+
+
+</sections><annex id="annex-reference" obligation="normative" displayorder="13">
+<title><strong>Annex A</strong><br/>(normative)<br/><strong>Abbreviations/Acronyms</strong></title>
+<definitions id="_2ff48cee-3270-46f9-207f-2b4c72d5a019" type="abbreviated_terms" obligation="normative">
+<dl id="_ac5b7eef-cd3a-7793-25af-321a8bf6df0b"><dt id="symbol-Abbreviation">Abbreviation</dt><dd><p id="_ba89ba5f-a602-78f2-9298-0e4955cea253">Explanation</p>
+</dd>
+<dt id="symbol-Abbreviation-1">Abbreviation</dt><dd><p id="_326af75c-b864-3c21-c4d7-b276de05418f">Explanation</p>
+</dd>
+<dt id="symbol-Abbreviation-2">Abbreviation</dt><dd><p id="_34bfa216-afda-f7be-6c84-433d03563015">Explanation</p>
+</dd></dl>
+</definitions></annex><annex id="annex-technical-detail" obligation="informative" displayorder="14">
+<title><strong>Annex B</strong><br/>(informative)<br/><strong>Technical Detail</strong></title>
+<p id="_d1b0c54f-5369-b232-db3a-0cb4b2ad28f8">&#x3c;Technical detail (material beyond 20/30 pages in the core content)section, which is not mandatory for the understanding of the document, can be placed in an annex.&#x3e;<note id="_6a070e6a-0ab6-19a6-40b8-fc4714221aed"><name>NOTE</name><p id="_6d66e7dc-2ebc-4f7b-9843-1ab6d7401740">Place annex material in sequential order and set <tt>obligation</tt> attribute as “normative” (default) or “informative” according to the case.</p>
+
+<p id="_63ce6ed0-58ed-d672-4772-ca7e9464e919">If additional annexes are needed, you can duplicate this section and change the <tt>id</tt> attribute (annex-technical-detail) to a unique value. You will also need to increment the filename.</p>
+</note></p>
+
+
+</annex><bibliography><references id="annex-bibliography" normative="false" obligation="informative" unnumbered="true" displayorder="12">
+<title depth="1">Bibliography</title><bibitem id="ogc10-092r3" type="standard" schema-version="v1.2.9"><formattedref>Ben Domenico: OGC 10-092r3, <em>NetCDF Binary Encoding Extension Standard: NetCDF Classic and 64-bit Offset Format</em>. Open Geospatial Consortium (2011).</formattedref><uri type="src"/><uri type="obp">https://portal.ogc.org/files/?artifact_id=43734</uri><docidentifier type="metanorma-ordinal">[1]</docidentifier><docidentifier type="OGC" primary="true">OGC 10-092r3</docidentifier><docidentifier type="metanorma">[NetCDF]</docidentifier><docidentifier scope="biblio-tag">OGC 10-092r3</docidentifier><biblio-tag>[1]<tab/></biblio-tag></bibitem><bibitem id="ogc14-084r2" type="standard" schema-version="v1.2.9"><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf: OGC 14-084r2, <em>OGC® Moving Features Encoding Extension: Simple Comma Separated Values (CSV)</em>. Open Geospatial Consortium (2015). <link target="http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</link>.</formattedref><uri type="src">http://www.opengis.net/doc/IS/movingfeatures/csv-extension/1.0.0</uri><uri type="obp">https://docs.ogc.org/is/14-084r2/14-084r2.html</uri><docidentifier type="metanorma-ordinal">[2]</docidentifier><docidentifier type="OGC" primary="true">OGC 14-084r2</docidentifier><docidentifier type="metanorma">[nofetch]</docidentifier><docidentifier scope="biblio-tag">OGC 14-084r2</docidentifier><biblio-tag>[2]<tab/></biblio-tag></bibitem><bibitem id="ogc14-083r2" type="standard" schema-version="v1.2.9"><formattedref>Akinori Asahara, Ryosuke Shibasaki, Nobuhiro Ishimaru, David Burggraf: OGC 14-083r2, <em>OGC® Moving Features Encoding Part I: XML Core</em>. Open Geospatial Consortium (2015). <link target="http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</link>.</formattedref><uri type="src">http://www.opengis.net/doc/IS/movingfeatures/xmlcore/1.0.0</uri><uri type="obp">https://docs.ogc.org/is/14-083r2/14-083r2.html</uri><docidentifier type="metanorma-ordinal">[3]</docidentifier><docidentifier type="OGC" primary="true">OGC 14-083r2</docidentifier><docidentifier scope="biblio-tag">OGC 14-083r2</docidentifier><biblio-tag>[3]<tab/></biblio-tag></bibitem><bibitem id="ogc11-165r2">
+  <formattedref format="application/x-isodoc+xml">OGC: OGC 11-165r2: CF-netCDF3 Data Model Extension standard, 2012</formattedref><docidentifier type="metanorma-ordinal">[4]</docidentifier>
+  <docidentifier type="metanorma">[CF-netCDF3]</docidentifier>
+<biblio-tag>[4]<tab/></biblio-tag></bibitem><bibitem id="Simonis2018">
+  <formattedref format="application/x-isodoc+xml">Standardized Big Data Processing in Hybrid Clouds. In: Proceedings of the 4th International Conference on Geographical Information Systems Theory, Applications and Management — Volume 1: GISTAM, pp. 205–210. SciTePress (2018).</formattedref><docidentifier type="metanorma-ordinal">[5]</docidentifier>
+  <docidentifier>Simonis, I.</docidentifier><docidentifier scope="biblio-tag">Simonis, I.</docidentifier>
+  
+<biblio-tag>[5]<tab/></biblio-tag></bibitem><bibitem id="netcdf">
+  <formattedref format="application/x-isodoc+xml">Lawrence Livermore National Laboratory: NetCDF CF Metadata Conventions – <link target="http://cfconventions.org/">http://cfconventions.org/</link></formattedref><docidentifier type="metanorma-ordinal">[6]</docidentifier>
+  
+<biblio-tag>[6]<tab/></biblio-tag></bibitem><bibitem id="acdd">
+  <formattedref format="application/x-isodoc+xml">ESIP: Attribute Convention for Data Discovery (ACDD) – <link target="http://wiki.esipfed.org/index.php/"/></formattedref><docidentifier type="metanorma-ordinal">[7]</docidentifier>
+  
+<biblio-tag>[7]<tab/></biblio-tag></bibitem>
+
+
+
+
+
+
+
+
+
+
+
+
+</references></bibliography>
+</ogc-standard>

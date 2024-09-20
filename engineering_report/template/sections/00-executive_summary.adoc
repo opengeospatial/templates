@@ -1,0 +1,55 @@
+////
+== Keywords
+
+Keywords inserted here automatically by Metanorma from document header,
+do not reenter
+////
+
+[executive_summary]
+== Executive Summary
+
+[NOTE]
+====
+This Executive Summary, including the Overview, Future Outlook and Value proposition, is a mandatory section for all Engineering Reports. The Executive Summary is a high-level overview of the document and should be written in a way that is accessible to a non-technical audience. It should provide a brief overview of the document, including the problem being addressed, the solution, and the benefits of the solution. The Executive Summary should ideally be 1 page, and can be no more than 2 page in length.    
+====
+
+
+[overview]
+== Overview
+
+<Insert Overview Text here>
+
+[future_outlook]
+== Future Outlook
+
+<Insert Future Outlook Text here>
+
+[value_proposition]
+== Value Proposition
+
+<Insert Value Proposition Text here>
+
+////
+== Submitting organizations
+
+Submitting organisations added automatically by Metanorma from document attributes
+////
+
+
+[contributors]
+== Contributors
+All questions regarding this submission should be directed to the editor or the submitters:
+
+
+|===
+|Name |Affiliation |OGC member
+
+|Steve Liang | University of Calgary, Canada / SensorUp Inc. | Yes
+|===
+
+
+[NOTE]
+====
+If you need to place any further sections in the preface area
+use the `[.preface]` attribute. However this is not recommended.
+====
