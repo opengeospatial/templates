@@ -1,6 +1,8 @@
-[requirement,type="general",id="/req/req-class-a/req-name-1",label="/req/req-class-a/req-name-1",obligation="requirement"]
+[[req_class_a_name_1]]
+
+[requirement]
 ====
-
-Requirement 'shall' statement
-
+[%metadata]
+identifier:: /req/req-class-a/req-name-1
+part:: Requirement 'shall' statement
 ====
