@@ -1,0 +1,44 @@
+= Discussion Paper for OGC (add title text)
+:comment: ### Document type; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:doctype: discussion-paper
+:comment: ### Document status/stage; mandatory. Visit: https://www.metanorma.org/author/ogc/authoring/ for permitted types
+:status: published
+:comment: ### Relevant committee; mandatory. The permitted types are: technical, planning, and strategic-member-advisory
+:committee: technical
+:comment: ### Internal reference number; mandatory
+:docnumber: 16-080
+:comment: ### Date on which the standard was updated; mandatory
+:received-date: 2017-06-29
+:comment: ### Date on which the standard was approved by the issuing authority; mandatory
+:issued-date: 2017-06-29
+:comment: ### Date on which the standard was published; mandatory
+:published-date: 2017-01-23
+:comment: ###  Year when the copyright for the document was issued; optional
+:copyright-year: 2017
+:comment: ### External link referencing the document; optional. If not provided, a default value is created following this structure: "http://www.opengis.net/doc/{abbrevation of doctype}/{abbrev}/{version}"
+:external-id: http://www.opengis.net/doc/PER/t12-A063
+:comment: ### Author one
+:fullname: John Doe
+:comment: ### Author two
+:fullname_2: Jane Doe
+:comment: ### Role of the authors; optional. Supply only if correspoding author is an editor
+:role_2: editor
+:comment: ### Comma delimited keywords; mandatory
+:keywords: keyword_1, keyword_2, keyword_3, etc.
+:comment: ### Semicolon-delimited list of the submitting organizations; mandatory
+:submitting-organizations: organization_1; organization_2; organization_3; etc.
+:comment: ### Metanorma flavor; mandatory
+:mn-document-class: ogc
+:comment: ### Desired output formats; mandatory
+:mn-output-extensions: xml,html,doc,pdf,rxl
+:comment: ### Directory name used as prefix for the location of image files; optional
+:imagesdir: images
+:comment: ### Enable local relaton cache for quick inclusion of prefetched references; optional. For further information, visit: https://www.metanorma.org/author/ref/document-attributes/#caches, https://www.metanorma.org/author/topics/building/reference-lookup/#lookup-result-caching
+:local-cache-only:
+
+
+// Clauses
+include::sections/00-preface.adoc[]
+include::sections/01-normative-references.adoc[]
+include::sections/02-other-clauses.adoc[]
+
