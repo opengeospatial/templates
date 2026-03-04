@@ -1,4 +1,3 @@
-.Preface
 
 ////
 NOTE: Uncomment ISO section if necessary
@@ -18,6 +17,8 @@ Attention is drawn to the possibility that some of the elements of this document
 == Abstract
 
 <Insert Abstract Text here>
+
+.Preface
 
 == Security considerations
 
