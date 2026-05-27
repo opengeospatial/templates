@@ -152,3 +152,20 @@ _The Secret Stuff DWG has been given requirements by the following organizations
 *i.e. and e.g.*
 
 "I.e." and "e.g." always have a comma after the abbreviation. So the correct use is "Features represent real world objects (e.g., a road can be a linear feature)."
+
+
+== Metanorma Authoring Tool
+
+The OGC has adopted the Metanorma Authoring Tool for the creation of OGC documents. Metanorma provides a user-friendly interface for creating documents in AsciiDoc format, which is then converted to the final PDF and HTML formats. Metanorma also includes templates that adhere to OGC document formatting guidelines, making it easier for editors to produce compliant documents.  Metanorma has been adopted by the OGC Document Subcommittee (DocTeam) and is the recommended tool for all OGC document editing. For more information on authoring with Metanorma, please refer to the https://www.metanorma.org/author/ogc/authoring/[Metanorma OGC Authoring Tool documentation].
+
+== Final Checks
+
+Before submitting a document for publication, editors should perform the following final checks:
+
+- Submit any Definition URLs to the OGC Naming Authority for review and approval.
+- Ensure that all abbreviations are expanded at first use.
+- Verify that all figures and tables are properly labeled and referenced in the text.
+- Check for consistency in terminology and formatting throughout the document.
+- Review the document for clarity and readability, ensuring that it adheres to the guidelines outlined in this editorial guidance document.
+- Use the proper OGC Document Template to ensure compliance with formatting requirements.
+- Check all URLs for resolvability and accuracy (use a tools such as https://dnschecker.org/website-broken-link-checker.php[DNS Checker] or https://www.brokenlinkcheck.com/ [Broken Link Check]).
